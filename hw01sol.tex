@@ -1,8 +1,8 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-\textbf{Exercise 1. Fermat's Principle}\\
-Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in the water, with $v_r > v_s$. What is the path that minimizes the time for reaching point B and saving Bob from drowning?
 
+\textbf{Exercise 1. Fermat's Principle}\\
+\textbf{Q\&A} Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in the water, with $v_r > v_s$. What is the path (Determined by Alice starting angle $\theta_i$ in \textbf{Equation \ref{sol1a}}}) that minimizes the time for reaching point B and saving Bob from drowning?\\
 
 \begin{figure}
 \centering\fbox{\includegraphics[height=2.0in]{figures/hw1_1.png}}
@@ -10,14 +10,60 @@ Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in t
 \label{fig:1}
 \end{figure}
 
-\textbf{Answer}\\
-$\because v_r > v_s$ and \\
-$\because$ Snell's law states the relationship between the incident index and angle and the transmission index and angle is defined as: $n_i\sin(\theta_i) = n_t \sin(\theta_{t})$ and\\
-$\because$ velocity of light and material index are inversely related as follows:  $n_i = c / v_r$ and $n_t = x / v_s$ and \\
-$\because$ the Path the light  (aka lifeguard Alice), shown in Figure \ref{fig:1},  travels  = $AO + OB = n_i \sqrt{(x^2 + z^2)} + n_t \sqrt{(w-x)^2 +  z^{\prime 2}}$ and\\
-$\because$ the Shortest Path is determined by setting the derivative equal to zero such that $ \frac{\partial \text{Path}}{\partial x} = n_i \frac{x}{\sqrt{(x^2 + z^2)}} - n_t \frac{w-x}{\sqrt{((w-x)^2 + z^{2\prime 2})}} = 0$ and by substituting for velocity and simplifying we arrive at\\
-$\frac{1}{v_r} \frac{x}{\sqrt{(x^2 + z^2)}} = \frac{1}{v_s} \frac{w-x}{\sqrt{((w-x)^2 + z^{2\prime 2})}} $ \\
+We know that $v_r > v_s$ and $\therefore$ we know that $n_i < n_t$ and \\
 
+$\because$ the velocity of light (life guard Alice) and material index are inversely related as follows:  $n_i = c / v_r$ and $n_t = c / v_s$ and \\
+
+$\because$ Snell's law states the relationship between the incident index and angle and the transmission index and angle is defined as: $n_i\sin(\theta_i) = n_t \sin(\theta_{t})$ where we know that when light is traveling from a lower to higher index, towards optically denser material, the transmission angle $\theta_t$ with respect to normal decreases, resulting in the maximum incident angle ($\theta_i = 90$ degrees) that can enter the optically dense medium: $n_i = n_t \sin(\theta_t)$\\
+
+$\therefore$ we can state that $\frac{c}{v_r} = \frac{c}{v_s} \sin(\theta_t)$ and $\therefore$ that $v_s = v_r \sin(\theta_t)$\\
+
+$\because$ Trigonometrically we know that $\sin(\theta_i) = \frac{x}{\sqrt{x^2 + z^2}}$\\
+
+
+$\because$ the Path the light  (aka lifeguard Alice), shown in Figure \ref{fig:1},  travels  = $AO + OB = n_i \sqrt{(x^2 + z^2)} + n_t \sqrt{(w-x)^2 +  z^{\prime 2}}$ and\\
+
+$\because$ the Shortest Path is determined by setting the derivative equal to zero such that $ \frac{\partial \text{Path}}{\partial x} = n_i \frac{x}{\sqrt{(x^2 + z^2)}} - n_t \frac{w-x}{\sqrt{((w-x)^2 + z^{2\prime 2})}} = 0$ which trigonometrically we know is equivalent to $n_i \sin{\theta_i} - n_t \sin{\theta_t} = 0$\\
+
+When we rewrite in terms of velocity and set equal we arrive at $\frac{c}{v_r}\sin{\theta_i} = \frac{c}{v_s} \sin{\theta_t}$ and simplify $v_s\sin{\theta_i} = {v_r}\sin{\theta_t}$ and $\therefore$ we have shown that in order to take the path of least resistance and minimize time light (and the lifeguard) will run at an angle normal to the beach equal to 
+
+\begin{equation}\label{sol1a}
+\theta_i = \arcsin{(\frac{v_r}{v_s} \sin{\theta_t})}
+\end{equation}
+
+\textbf{Exercise 2. Total Internal Reflection}\\
+\textbf{Q\&A} Derive the critical angle $\theta$ (Equation \ref{eq:2a}) for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture (Equation \ref{eq:2b}) of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory (Qualitatively Sinusoidal) of the ray in case of total internal reflection ? \\
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_2.png}}
+\caption{Required $\theta$ in Equation \ref{eq:2a} for total internal reflection to occur}
+\label{fig:2}
+\end{figure}
+
+\textbf{Big Fat Assumption:} Ray entering cladding does not change ray trajectory, even though going form $n_{Air} = 1$ into $n_{Core} = 1.5$\\
+
+\textbf{Snells Law} for Total Internal Reflection $n\sin(\theta_i) = n^{\prime}\sin(\theta_{ref})$\\
+
+The Critical angle $\theta_c$ of the incident ray results in a refracted ray that travels parallel to the materials interface. For the \textbf{generic} problem with a interface between a material with index of refraction n and air with index of refraction 1, Snell's Law becomes, using radians, $n\sin(\theta_c) = 1\sin(\pi/2)$ which simplifies to $n\sin(\theta_c) = 1$. This signifies that for total internal reflection to occur in the \textbf{generic}  $n\sin(\theta_c) > 1$. \\
+
+We can adapt the \textbf{generic} problems critical angle condition $n\sin(\theta_c) = 1\sin(\pi/2)$ with the \textbf{current} problems given material index's resulting in  $1.5\sin(\theta_1) = 1.4\sin(\theta_2 = \pi/2)$. Mapping from the \textbf{generic} problem we know that for total internal reflection to occur $1.5\sin(\theta_1) > 1.4\sin(\theta_2 = \pi/2)$ which simplifies to $\theta_1 > \arcsin(\frac{1.4}{1.5})$.\\
+
+Invoking our \textbf{Big Fat Assumption} and utilizing trigonometry's similar angles, utilizing radians, we know that $\pi/2 = \theta  + \theta_1$. Understanding that $\theta$ will be a positive angle off of our normal axis, we know that for total internal reflection to occur $\pi/2 - \theta > \arcsin(\frac{1.4}{1.5})$. We can solve for $\theta$ by multiplying by $-1$, showing us that for total internal reflection to occur 
+
+\begin{equation}\label{eq:2a}
+\theta < \pi/2 - \arcsin(\frac{1.4}{1.5})
+\end{equation}
+
+The numerical aperture is the incident angle of acceptance of the fiber, generally stated as $(\text{NA}) \equiv \sin(\theta_0) \leq \sqrt{n_1^2 - n_2^2}$, or referencing figure \ref{fig:2} and explicitly stated for our problem as $(\text{NA}) \equiv \sin(\theta) \leq \sqrt{1.5^2 - 1.4^2}$, resulting in 
+
+\begin{equation}\label{eq:2b}
+(\text{NA}) \leq 0.5385
+\end{equation}
+
+For a Fiber with a GRIN (Gradient Index) between $n_{max} = 1.5$ and $n_{min} = 1.4$, if the condition $n_{max}\sin(\theta_0)$ is respected, light in a uniform medium propagates in a straight line where as light in a gradient fiber propagates along a \textbf{sinusoidal} path.\\
+
+\textbf{Exercise 3. Ellipsoidal refractor}\\
+\textbf{Q\&A} What is the dimension of the axes of an ellipsoidal refractor $(n=1.5)$ which focuses a plane wave ($\lambda_1 = \SI{1.55e-6}{\meter}$) impinging on axis (rays parallel to the major axis) in its focal point $f = = \SI{2.5e-2}{\meter}$? Would the same refractor perfectly focus at wavelength $\lambda_2 = \SI{0.5e-6}{\meter}$ considering that the refractive $n$ index varies to $1.6$? If yes why? If no, which would be the dimension of the ellipse that focuses it? Would the the ellipsoidal refractor be affected by any kind of aberration? Motivate your answer. Graduate Students: Additional point if you can use any ray tracing software for demonstrating the functioning of the refractor.
 
 
 
