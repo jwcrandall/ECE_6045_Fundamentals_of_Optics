@@ -2,7 +2,7 @@
 \begin{document}
 
 \textbf{Exercise 1. Fermat's Principle}\\
-\textbf{Q\&A} Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in the water, with $v_r > v_s$. What is the path (Determined by Alice starting angle $\theta_i$ in \textbf{Equation \ref{sol1a}}}) that minimizes the time for reaching point B and saving Bob from drowning?\\
+\textbf{Q\&A} Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in the water, with $v_r > v_s$. What is the path (Determined by Alice starting angle $\theta_i$ in \textbf{Equation \ref{sol1a}}) that minimizes the time for reaching point B and saving Bob from drowning?\\
 
 \begin{figure}
 \centering\fbox{\includegraphics[height=2.0in]{figures/hw1_1.png}}
@@ -63,8 +63,149 @@ The numerical aperture is the incident angle of acceptance of the fiber, general
 For a Fiber with a GRIN (Gradient Index) between $n_{max} = 1.5$ and $n_{min} = 1.4$, if the condition $n_{max}\sin(\theta_0)$ is respected, light in a uniform medium propagates in a straight line where as light in a gradient fiber propagates along a \textbf{sinusoidal} path.\\
 
 \textbf{Exercise 3. Ellipsoidal refractor}\\
-\textbf{Q\&A} What is the dimension of the axes of an ellipsoidal refractor $(n=1.5)$ which focuses a plane wave ($\lambda_1 = \SI{1.55e-6}{\meter}$) impinging on axis (rays parallel to the major axis) in its focal point $f = = \SI{2.5e-2}{\meter}$? Would the same refractor perfectly focus at wavelength $\lambda_2 = \SI{0.5e-6}{\meter}$ considering that the refractive $n$ index varies to $1.6$? If yes why? If no, which would be the dimension of the ellipse that focuses it? Would the the ellipsoidal refractor be affected by any kind of aberration? Motivate your answer. Graduate Students: Additional point if you can use any ray tracing software for demonstrating the functioning of the refractor.
+\textbf{Q\&A} What is the dimension of the axes of an ellipsoidal refractor $(n=1.5)$ which focuses a plane wave ($\lambda_1 = \SI{1.55e-6}{\meter}$) impinging on axis (rays parallel to the major axis) in its focal point $f =  \SI{2.5e-2}{\meter}$? Would the same refractor perfectly focus at wavelength $\lambda_2 = \SI{0.5e-6}{\meter}$ considering that the refractive $n$ index varies to $1.6$? If yes why? If no, which would be the dimension of the ellipse that focuses it? Would the the ellipsoidal refractor be affected by any kind of aberration? Motivate your answer. Graduate Students: Additional point if you can use any ray tracing software for demonstrating the functioning of the refractor.\\
 
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_3.png}}
+\caption{Ellipsoidal refractor}
+\label{fig:3}
+\end{figure}
+
+The dimension of the $x$ axes of an ellipsoidal refractor when focusing a object at $\infty$, with rays parallel to the major $z$ axes, to an image at $F$, is defined by the ellipsoidal refractor equation $\left(s-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2$ where $s=\frac{x^2}{4f}$. When solving for $x$ we see that the solution is independent of wavelength $\lambda$.\\
+
+\begin{equation}
+\left(\frac{x^2}{4f}-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2
+\end{equation}
+
+\textbf{Exercise 4. Hyperboloidal refractor}\\
+
+\textbf{Q\&A} Prove that a hyperbolodial refractor is an ideal refractor that can convert a spherical wave into a planar wave, or in other words image at infinity a point object.\\
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_4.png}}
+\caption{Hyperboloidal refractor}
+\label{fig:4}
+\end{figure}
+
+$FQ = FO + nOO^{\prime}$ $\because$ rays on differing trajectories must travel the same distance.\\
+
+$\therefore \sqrt{(f+s)^2 + x^2} = f + ns$  and\\ 
+
+$\therefore  f^2+ 2fs + s^2 + x^2 = f^2 + 2nfs + n^2s^2$  and\\ 
+
+$\therefore 2fs + s^2 + x^2 = 2nfs + n^2s^2$  and\\ 
+
+$\therefore x^2  - s^2(n^2 - 1) - 2fs(n- 1) = 0$  and divide by $(n^2 - 1)$ \\ 
+
+$\therefore \frac{1}{n^2 - 1} x^2  - s^2 - 2fs(\frac{1}{n + 1}) = 0$  and \\ 
+
+$\therefore  - s^2 - 2fs(\frac{1}{n + 1}) = -\frac{1}{n^2 - 1} x^2 $  and \\ 
+
+$\therefore  - s^2 - 2fs(\frac{1}{n + 1}) = -\frac{1}{n^2 - 1} x^2 $  and \\ 
+
+$\therefore  0 = s(s + 2f(\frac{1}{n + 1})) -\frac{1}{n^2 - 1} x^2 $  and \\
+
+$\therefore \left(s-\frac{1}{n+1}f \right)^2 - \frac{1}{n^2 - 1}x^2 = \left(\frac{1}{n+1}f \right)^2$ \\
+
+\textbf{Exercise 5. Immersed lens}\\
+
+\text{Q\&A} A lens (refractive index $n_0$ with a left curvature $R_1$ and a right curvature $R_2$) is immersed in two different liquids $n_1$ and $n_2$. Under the paraxial assumption determine the focal length and power of the lens. Hint: Use ray transfer matrix. Assuming that the lens is in air, and has a focal length of $\SI{1.0e-2}{\meter}$. The object has an elevation $h_1=1$ is positioned at $\SI{5.0e-2}{\meter}$ away from the lens. What is the lateral magnification? What is the distance?
+
+%The ideal imaging element is referred to as asphere, or as ashperic lens. It works perfectly on axis and reasonably well in a limited range of angles off-axis. A Non Perfect Image results from a non planar wave front generated by spherical aberration. 
+
+\begin{equation}\label{eq:5a}
+n_{Left} \alpha_{Left} = n_{Right} \alpha_{Right} - \frac{n_{Left} - n_{Right}}{R}x
+\end{equation}
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_5b.png}}
+\caption{Spheric Paraxial Assumption Variables Spatial Relationships}
+\label{fig:5b}
+\end{figure}
+
+Equation \ref{eq:5a} referencing figure \ref{fig:5b} defines the trajectory of a light ray in a sphere. Assuming that $\sin(\alpha_{right}) << 1$, and that $\sin(\alpha_{left}) << 1$, the paraxial approximation requires that $x<<R$. Height $x$ of the material index interface on the light ray refraction trajectory is by definition spatially equal on both sides of the interface, expresses as $ x_{left}=x_{right}$. The change in index, change in trajectory relationship within a spherical lens can be expressed by the following ray transfer matrix\\
+
+\begin{pmatrix}
+    n_{right} \alpha_{right} \\
+    x_{right}
+\end{pmatrix}
+=
+\begin{pmatrix}
+    1   & -\frac{n_{right}-n_{left}}{R} \\
+    0   &   1
+\end{pmatrix}
+\begin{pmatrix}
+    n_{left}\alpha_{left} \\
+    x_{left}
+\end{pmatrix}\\
+
+We can trace the trajectory of light passing along a cascade of optical elements under the paraxaial assumption, assuming the assumption holds at each change in index of refraction interface.\\
+
+The thin lens approximations spatial relationships noted in figure \ref{fig:5c} define $t=R-R\cos{\phi}= 2R\sin^2\phi$ where the parazial approximation assumes that $\alpha_{max} << 1$ and $\therefore$ $\phi_{Max} << 1$ and $\therefore$ thickness $t \approx 0$.\\ 
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_5c.png}}
+\caption{Thin Lens Approximation Variables Spatial Relationships}
+\label{fig:5c}
+\end{figure}
+
+The ray "bundle" referenced in \ref{fig:5d} of a diverging spherical waves emanating from height $h_0$ above the $z$ axis within liquid $1$s index of refraction $n_1$ refract into the thin spherical lens with left curvature $R_1$, index of refraction $n_0$, while traveling as a non perfect collimated beam, before reaching the lens right curvature $R_2$ and refracting into liquid $2$s index of refraction $n_2$ and converging as a spherical wave to height $h_1$ bellow the $z$ axis has the following ray transfer matrix\\
+
+\begin{bmatrix}
+    n_{2} \alpha_{2} \\
+    h_{1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   & -\frac{n_{right}-n_{left}}{R} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   & -\frac{n_{right}-n_{left}}{R} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    n_{1} \alpha_{1} \\
+    h_{0}
+\end{bmatrix}
+
+which simplifies to\\
+
+\begin{bmatrix}
+    n_{left}\alpha_{left} \\
+    x_{left}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   & -\frac{n_{right}-n_{left}}{R} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    n_{left}\alpha_{left} \\
+    x_{left}
+\end{bmatrix}\\
+
+and is redefined with focal length $f$ to\\
+
+\begin{bmatrix}
+    n_{left}\alpha_{left} \\
+    x_{left}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   & -\frac{n_{right}-n_{left}}{R} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    n_{left}\alpha_{left} \\
+    x_{left}
+\end{bmatrix}
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw1_5a.png}}
+\caption{Immersed Bi-convex lens Variables Spatial Relationships}
+\label{fig:5d}
+\end{figure}
 
 
 \end{document}
