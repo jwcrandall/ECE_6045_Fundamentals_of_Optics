@@ -149,61 +149,55 @@ The thin lens approximations spatial relationships noted in figure \ref{fig:5c} 
 \label{fig:5c}
 \end{figure}
 
-The ray "bundle" referenced in \ref{fig:5d} of a diverging spherical waves emanating from height $h_0$ above the $z$ axis within liquid $1$s index of refraction $n_1$ refract into the thin spherical lens with left curvature $R_1$, index of refraction $n_0$, while traveling as a non perfect collimated beam, before reaching the lens right curvature $R_2$ and refracting into liquid $2$s index of refraction $n_2$ and converging as a spherical wave to height $h_1$ bellow the $z$ axis has the following ray transfer matrix\\
+The a focus of the bundle or rays diverging from point source $S$ referenced in \ref{fig:5d} forms a diverging spherical waves emanating from height $h_0$ above the $z$ axis within liquid $1$s index of refraction $n_1$ refract into the thin spherical lens with left curvature $R_1$, index of refraction $n_0$, while traveling as a non perfect collimated beam, before reaching the lens right curvature $R_2$ and refracting into liquid $2$s index of refraction $n_2$ and converging as a spherical wave to height $h_1$ bellow the $z$ axis at point $P$. The system is said to be stigmatic for points $S$ and $P$ with $P$ referred to as a perfect image of $S$.\\ In an ideal optical system, these conjugate points will be stigmaticlly (perfectly) imaged.
+
+It is important to note that both $\alpha_1$ and $\alpha_2$ are both negative angles due to their clockwise orientation,that $h_1$ is negative due to its down ward orientation bellow the $z$ axis, and that both $R_1>0$ and $R_2>0$ in a Bi convex lens.\\
+
+$V_1$ is the vertex of the surface, and $\bar{}$ The length $s_0$ is know as the object distance, and the \\
+
+The ray transfer matrix between the $n_1$, $n_0$ interface, is defined as\\
 
 \begin{bmatrix}
-    n_{2} \alpha_{2} \\
-    h_{1}
+    n_{0} (-\alpha_{1}) \\
+    (h_{0})
 \end{bmatrix}
 =
 \begin{bmatrix}
-    1   & -\frac{n_{right}-n_{left}}{R} \\
+    1   & -\frac{n_{0}-n_{1}}{R_1} \\
     0   &   1
 \end{bmatrix}
 \begin{bmatrix}
-    1   & -\frac{n_{right}-n_{left}}{R} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    n_{1} \alpha_{1} \\
+    n_{1} (-\alpha_{1}) \\
     h_{0}
+\end{bmatrix}\\
+
+The ray transfer matrix between the $n_1$, $n_0$ interface, and the $n_0$, $n_2$ interface is defined as\\
+
+\begin{bmatrix}
+    n_{2} (-\alpha_{2}) \\
+    (-h_{1})
 \end{bmatrix}
+=
+\begin{bmatrix}
+    1   & -\frac{n_{2}-n_{0}}{R_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   & -\frac{n_{0}-n_{1}}{R_1} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    n_{1} (-\alpha_{1}) \\
+    h_{0}
+\end{bmatrix}\\
 
 which simplifies to\\
 
-\begin{bmatrix}
-    n_{left}\alpha_{left} \\
-    x_{left}
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   & -\frac{n_{right}-n_{left}}{R} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    n_{left}\alpha_{left} \\
-    x_{left}
-\end{bmatrix}\\
-
-and is redefined with focal length $f$ to\\
-
-\begin{bmatrix}
-    n_{left}\alpha_{left} \\
-    x_{left}
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   & -\frac{n_{right}-n_{left}}{R} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    n_{left}\alpha_{left} \\
-    x_{left}
-\end{bmatrix}
+Stuck on how to properly add off axis object to matrix form\\
 
 \begin{figure}
 \centering\fbox{\includegraphics[height=2.0in]{figures/hw1_5a.png}}
-\caption{Immersed Bi-convex lens Variables Spatial Relationships}
+\caption{Immersed Bi-convex lens image formation at finite distances variables spatial relationships}
 \label{fig:5d}
 \end{figure}
 
