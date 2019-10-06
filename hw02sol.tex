@@ -1,6 +1,12 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
 
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw2/hw2_1.png}}
+\caption{Parallel rays two lenses image formation variables spatial relationships}
+\label{fig:2_1}
+\end{figure}
+
 \textbf{Exercise 1}\\
 Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident from the left on a two-lens system composed of two positive lenses $L1$ (focal length $f1>0$) and $L2$ (focal length $f2 >0)$ as shown in figure \ref{fig:2_1}.\\
 
@@ -10,7 +16,7 @@ Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident f
 
 Due to the thin lens approximation, the lens thickness of $L_1$ and $L_2$ is negligible and $\therefore$ for elevation on either side of the lens $x_L = x_R = x$ . The system is surrounded by air with index $n_{air} = 1$. The ray transfer matrix for $L_1$ is
 
-\[
+\begin{equation}
 \begin{bmatrix}
     \alpha_m \\
     x_2
@@ -28,11 +34,11 @@ Due to the thin lens approximation, the lens thickness of $L_1$ and $L_2$ is neg
      \alpha_{1} \\
     x_1
 \end{bmatrix}
-\]
+\end{equation}
 
 and the ray transfer matrix for $L_2$ is
 
-\[
+\begin{equation}
 \begin{bmatrix}
     \alpha_2 \\
     x_2
@@ -60,11 +66,11 @@ and the ray transfer matrix for $L_2$ is
     \alpha_{m}  \\
     x_2
 \end{bmatrix}
-\]
+\end{equation}
 
 which through substitution form
 
-\[
+\begin{equation}
 \begin{bmatrix}
     1   & -\frac{1}{f_2} \\
     0   &   1
@@ -86,11 +92,11 @@ which through substitution form
      \alpha_{1} \\
     x_1
 \end{bmatrix}
-\]
+\end{equation}
 
 solve for reciprocal matrix, and multiplying the matrices 
 
-\[
+\begin{equation}
 \begin{bmatrix}
     \alpha_2 + \frac{x_2}{f_2}\\
     x_2
@@ -104,11 +110,11 @@ solve for reciprocal matrix, and multiplying the matrices
     \alpha_{1} \\
     x_1
 \end{bmatrix}
-\]
+\end{equation}
 
 multiplying the right hand side matrices again
 
-\[
+\begin{equation}
 \begin{bmatrix}
     \alpha_2 + \frac{x_2}{f_2}\\
     x_2
@@ -118,7 +124,7 @@ multiplying the right hand side matrices again
     \alpha_1 - \frac{x_1}{f_1} \\
     d\alpha_1 + x_1 - \frac{x_1 d}{f_1}
 \end{bmatrix}
-\]
+\end{equation}
 
 solve for the column vectors on left and right side\\
 
@@ -142,7 +148,11 @@ square both sides of equation and solve for d
 \end{aligned}
 \end{equation}
 
-square both sides of equation and solve for d and expand
+square both sides of equation and solve for d and expand \\
+
+Simplify with the knowledge that for the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$ and $\therefore$ we can relabel $\alpha_1 = \alpha_2 =\alpha$.\\
+
+\\ Trigonometrically we can state that $\tan(\alpha_m) = \frac{x_2}{d}$. For the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$.\\
 
 %\begin{equation}
 %\begin{aligned}
@@ -173,27 +183,11 @@ square both sides of equation and solve for d and expand
 %\end{aligned}
 %\end{equation}
 
+
+
+
+
 \newpage
-
-Simplify with the knowledge that for the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$ and $\therefore$ we can relabel $\alpha_1 = \alpha_2 =\alpha$.\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\\ Trigonometrically we can state that $\tan(\alpha_m) = \frac{x_2}{d}$. For the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$.\\
 
 \textbf{Q\&A} What is the optical power of this composite optical system and effective focal length? What is the effective focal length? What is the effective focal length? What is the value of the optical power for $d=f1+f2$? \textbf{Hint:} RTM?\\
 
@@ -203,12 +197,13 @@ Simplify with the knowledge that for the outgoing ray bundle from the second len
 
 \textbf{Q\&A} How is the image (virtual, real), what about the object? (Please point them out)\\
 
+
 \newpage
 
 \begin{figure}
-\centering\fbox{\includegraphics[height=2.0in]{figures/hw2/hw2_1.png}}
-\caption{Parallel rays two lenses image formation variables spatial relationships}
-\label{fig:2_1}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw2/hw2_2.png}}
+\caption{Two lenses}
+\label{fig:2_2}
 \end{figure}
 
 \textbf{Exercise 2}\\
@@ -217,11 +212,5 @@ The optical instrument shown below consists of 2 lenses $L_1$, $L_3$ and an aper
 \textbf{Q\&A} Determine the object distance so that a human observer's unaccommodating eye (no strain for focusing) can focus the image on the observer's retina. \textbf{Hint:} this means outgoing parallel ray bundle from $L_3$, which means that lens $1 ...$\\
 
 \textbf{Q\&A} What is the instrument use and what is the magnifying power? \textbf{Hint:} small object viewed by an eye
-
-\begin{figure}
-\centering\fbox{\includegraphics[height=2.0in]{figures/hw2/hw2_2.png}}
-\caption{Two lenses}
-\label{fig:2_2}
-\end{figure}
 
 \end{document}
