@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.12">
-<info created="D:20180115135840" modified="D:20191009181320"/>
+<info created="D:20180115135840" modified="D:20191009184753"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -421,7 +421,7 @@ h
 </path>
 <use name="mark/disk(sx)" pos="128 672" size="large" stroke="black"/>
 <text transformations="translations" pos="112 688" stroke="black" type="label" width="13.351" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">O</text>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="464 768" stroke="black" type="label" width="8.788" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">I</text>
+<text matrix="1 0 0 1 -208 16" transformations="translations" pos="464 768" stroke="black" type="label" width="8.788" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">I</text>
 <path matrix="1 0 0 1 0 48" stroke="black" pen="fat" arrow="normal/normal" rarrow="normal/normal">
 128 512 m
 224 512 l
@@ -491,5 +491,13 @@ h
 </path>
 <use name="mark/disk(sx)" pos="416 720" size="large" stroke="black"/>
 <text transformations="translations" pos="400 736" stroke="black" type="label" width="22.24" height="11.766" depth="2.58" valign="baseline" size="LARGE" style="math">F_{b2}</text>
+<path stroke="black" pen="fat">
+448 736 m
+256 832 l
+</path>
+<path matrix="1 0 0 1 0 -64" stroke="black" pen="fat">
+448 736 m
+256 832 l
+</path>
 </page>
 </ipe>
