@@ -12,9 +12,12 @@ Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident f
 
 \textbf{Q\&A} What is the distance between the lenses ($d$) as a function of the focal lengths in order for the ray bundle outgoing from the second lens to be parallel? In other words, to obtain collimated beam; image at infinite? \textbf{Hint:} Use Image formation principle.\\
 
-%In a properly spaced two lens system an incoming collimated ray bundle  
+When the collimated beam passes through bi-convex lens 1 it becomes a converging ray bundle with a focal length $f_1$. In order for the converging raybundle from the persepctive of the Lens 1 to act as an object point source divering ray bundle which once passed through lens 2. The focal length $f_2$ needs to be at the same point as $f_1 \therefore d = f_1 + f_2$\\ 
+
+\iffalse
 
 Due to the thin lens approximation, the lens thickness of $L_1$ and $L_2$ is negligible and $\therefore$ for elevation on either side of the lens $x_L = x_R = x$ . The system is surrounded by air with index $n_{air} = 1$. The ray transfer matrix for $L_1$ is
+
 
 \begin{equation}
 \begin{bmatrix}
@@ -154,6 +157,8 @@ Simplify with the knowledge that for the outgoing ray bundle from the second len
 
 \\ Trigonometrically we can state that $\tan(\alpha_m) = \frac{x_2}{d}$. For the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$.\\
 
+\fi
+
 %\begin{equation}
 %\begin{aligned}
 %\alpha_2^2 + 2\frac{\alpha_2 x_2}{f_2} + \frac{x_2^2}{f_2^2} + x_2^2} = & \alpha_1^2 - 2\frac{\alpha_1 x_1}{f_1} + \frac{\alpha_1^2}{f_1^2} \\
@@ -187,7 +192,7 @@ Simplify with the knowledge that for the outgoing ray bundle from the second len
 
 
 
-\newpage
+
 
 \textbf{Q\&A} What is the optical power of this composite optical system and effective focal length (also referred to as \textbf{element focal length})? What is the value of the optical power for $d=f1+f2$? \textbf{Hint:} RTM?\\
 
@@ -195,7 +200,34 @@ Optical power is equal to the reciprocal of the focal length of the device $P=\f
 
 \textbf{Q\&A} What are the propagation angle $\alpha_2$ and width $a_2$ (defined as $x_2$ in the figure \ref{fig:2_1} and matrices) of this outgoing ray bundle? \\
 
-$\alpha_2$ and width(z in Joseph Crandall's coordinate system) $z_2$ are spatially indicated in figure \ref{fig:2_1}.\\
+
+%$\alpha_2$ and width(z in Joseph Crandall's coordinate system) $z_2$ are spatially indicated in figure \ref{fig:2_1}.\\
+The ray transfer matrix for the $L_1$, $L_2$ telescope system is
+
+\begin{equation}
+\begin{bmatrix}
+    \alpha_2 \\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   & -\frac{1}{f_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    d   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   & -\frac{1}{f_1} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}  \\
+    x_1
+\end{bmatrix}
+\end{equation}\\
+
 
 \textbf{Q\&A} What are the angular and lateral magnifications?\\
 
@@ -229,6 +261,6 @@ Ideally this should produce a virtual image at $\infty$ such that the Magnificat
 
 \textbf{Q\&A} What is the instrument use and what is the magnifying power? \textbf{Hint:} small object viewed by an eye.\\
 
-The instrument is a rudimentary compound microscope and the Magnification power of the entire system is the product of the transverse linear magnification of the objective $M_T$, and the angular magnification of the eyepiece, $M_A$, forming the equality $M = M_To M_Ae = \frac{-x_i}{f_o} \frac{x_o}{f_e} = \frac{-B}{f_1} \frac{?}{f_3} = \frac{-160}{10} \frac{?}{f_20}$. \textbf{What is the standard near point} The objective magnifies the object and brings it up in the form of a real image, where it can be examined as if through a magnifying glass.  
+The instrument is a rudimentary compound microscope and the Magnification power of the entire system is the product of the transverse linear magnification of the objective $M_T$, and the angular magnification of the eyepiece, $M_A$, forming the equality $M = M_{To} M_{Ae} = \frac{-x_i}{f_o} \frac{x_o}{f_e} = \frac{-B}{f_1} \frac{?}{f_3} = \frac{-160}{10} \frac{250}{20} = 200$. \textbf{What is the standard near point}. The objective magnifies the object and brings it up in the form of a real image, where it can be examined as if through a magnifying glass.  
 
 \end{document}
