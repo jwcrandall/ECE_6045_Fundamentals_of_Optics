@@ -95,11 +95,37 @@ For a Fiber with a GRIN (Gradient Index) between $n_{max} = 1.5$ and $n_{min} = 
 \label{fig:3}
 \end{figure}
 
-The dimension of the $x$ axes of an ellipsoidal refractor when focusing a object at $\infty$, with rays parallel to the major $z$ axes, to an image at $F$, is defined by the ellipsoidal refractor equation $\left(s-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2$ where $s=\frac{x^2}{4f}$. When solving for $x$ we see that the solution is independent of wavelength $\lambda$.\\
+The dimension of the $x$ axes of an ellipsoidal refractor when focusing a object at $\infty$, with rays parallel to the major $z$ axes, to an image at $F$, is defined by the ellipsoidal refractor equation \ref{eq:e6}.
+%where 
+%$s=\frac{x^2}{4f}$.
+%When solving for $x$ we see that the solution is independent of wavelength $\lambda$.\\
 
-\begin{equation}
-\left(\frac{x^2}{4f}-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2
+\begin{equation}\label{eq:e6}
+\left(s-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2
+%\left(\frac{x^2}{4f}-\frac{n}{n+1}f \right)^2 + \frac{n^2}{n^2 - 1}x^2 = \left(\frac{n}{n+1}f \right)^2
 \end{equation}
+
+We want to rewrite Equation \ref{eq:e6} in the form of equation \ref{eq:e7}.
+
+\begin{equation}\label{eq:e7}
+\frac{(s-h)^2}{a^2} + \frac{x^2}{b^2} = 1 
+\end{equation}
+
+By dividing Equation \ref{eq:e6} by $\left(\frac{n}{n+1}f\right)^2$ we get $\frac{\left(s-\frac{n}{n+1}f \right)^2}{\left(\frac{n}{n+1}f\right)^2} + \frac{\frac{n^2}{n^2 - 1}}{\left(\frac{n}{n+1}f\right)^2}x^2 = 1$ which simplifies to Equation \ref{eq:e8}.
+
+\begin{equation}\label{eq:e8}
+\frac{\left(s-\frac{n}{n+1}f \right)^2}{\left(\frac{n}{n+1}f\right)^2} + 
+\frac{n + 1}{n-1} f^{-2} x^2 = 1
+\end{equation}
+
+Which from Equation \ref{eq:e7} tells us that $a=\frac{n}{n+1}f$ and $b=f \sqrt{\frac{n-1}{n+1}}$ giving us the major and minor axes of the ellipse.
+
+
+
+
+
+
+
 
 \textbf{Exercise 4. Hyperboloidal refractor}\\
 

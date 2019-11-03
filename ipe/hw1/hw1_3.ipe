@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.12">
-<info created="D:20180115135840" modified="D:20190929174438"/>
+<info created="D:20180115135840" modified="D:20191103071457"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -255,7 +255,7 @@ h
 <layer name="alpha"/>
 <layer name="beta"/>
 <view layers="alpha beta" active="alpha"/>
-<path layer="alpha" matrix="0.316228 -0.948683 0.948683 0.316228 -458.497 909.67" stroke="black" fill="white">
+<path layer="alpha" matrix="0.316228 -0.948683 0.948683 0.316228 -458.497 909.67" stroke="gray" fill="gray" pen="fat">
 416 800 m
 416 800 l
 416 800 l
@@ -492,5 +492,15 @@ h
 <text transformations="translations" pos="256 560" stroke="black" type="label" width="28.323" height="12.915" depth="4.3" valign="baseline" size="LARGE" style="math">\lambda / n</text>
 <text transformations="translations" pos="128 752" stroke="red" type="label" width="0" height="0" depth="0" valign="baseline" size="LARGE" style="math"></text>
 <text transformations="translations" pos="128 752" stroke="red" type="label" width="17.215" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">\infty</text>
+<path stroke="gray" pen="fat">
+320 672 m
+320 736 l
+</path>
+<path stroke="gray" pen="fat">
+320 768 m
+192 768 l
+</path>
+<text transformations="translations" pos="256 768" stroke="black" type="label" width="8.849" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">a</text>
+<text transformations="translations" pos="336 720" stroke="black" type="label" width="7.167" height="11.955" depth="0" valign="baseline" size="LARGE" style="math">b</text>
 </page>
 </ipe>
