@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20180115135840" modified="D:20190929120504"/>
+<ipe version="70212" creator="Ipe 7.2.12">
+<info created="D:20180115135840" modified="D:20191103044931"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -267,7 +267,7 @@ h
 432 800 l
 432 800 l
 </path>
-<path stroke="black" cap="1">
+<path matrix="1 0 0 1 -64 0" stroke="black" cap="1">
 320 784 m
 320 784 l
 </path>
@@ -378,23 +378,16 @@ h
 528 704 l
 528 704 l
 </path>
-<path stroke="black" pen="fat">
+<path matrix="1 0 0 1 32 0" stroke="black" pen="fat">
 128 704 m
 16 0 0 16 128 688 128 672 a
-</path>
-<path stroke="red" pen="fat" rarrow="normal/normal">
-192 704 m
-64 640 l
-64 640 l
 </path>
 <path stroke="black" pen="fat">
 80 704 m
 64 704 l
 64 704 l
 </path>
-<text transformations="translations" pos="272 784" stroke="black" type="label" width="101.299" height="11.094" depth="4.91" valign="baseline" size="LARGE" style="math">n_{Cladding}=1.4</text>
-<text transformations="translations" pos="80 672" stroke="black" type="label" width="8.324" height="11.955" depth="0" valign="baseline" size="LARGE" style="math">\theta
-</text>
+<text matrix="1 0 0 1 -64 0" transformations="translations" pos="272 784" stroke="black" type="label" width="101.299" height="11.094" depth="4.91" valign="baseline" size="LARGE" style="math">n_{Cladding}=1.4</text>
 <text transformations="translations" pos="272 672" stroke="black" type="label" width="78.877" height="11.1" depth="2.58" valign="baseline" size="LARGE" style="math">n_{Core} = 1.5</text>
 <path stroke="black" pen="fat">
 320 704 m
@@ -410,11 +403,30 @@ h
 320 752 m
 16 0 0 -16 304 752 288 752 a
 </path>
-<path stroke="black" pen="fat">
-320 752 m
-16 0 0 16 336 752 352 752 a
+<path stroke="red" pen="fat" arrow="normal/normal">
+128 640 m
+192 704 l
 </path>
-<text transformations="translations" pos="272 720" stroke="black" type="label" width="14.207" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_1</text>
-<text transformations="translations" pos="352 720" stroke="black" type="label" width="14.207" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_2</text>
+<text transformations="translations" pos="128 720" stroke="black" type="label" width="58.781" height="11.1" depth="2.58" valign="baseline" size="LARGE" style="math">n_{Air}=1</text>
+<path stroke="black" pen="fat">
+256 736 m
+16 0 0 -16 256 720 256 704 a
+</path>
+<path stroke="black" pen="fat">
+320 768 m
+320 784 l
+</path>
+<path stroke="black" pen="fat">
+320 800 m
+320 816 l
+</path>
+<text transformations="translations" pos="368 784" stroke="black" type="label" width="18.992" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_{cr}</text>
+<text transformations="translations" pos="304 720" stroke="black" type="label" width="17.385" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_{ci}</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="288 704" stroke="black" type="label" width="13.954" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_{r}</text>
+<text transformations="translations" pos="128 672" stroke="black" type="label" width="12.347" height="11.957" depth="2.58" valign="baseline" size="LARGE" style="math">\theta_{i}</text>
+<path stroke="black" pen="fat">
+320 800 m
+32.249 0 0 -32.249 324 768 352 752 a
+</path>
 </page>
 </ipe>

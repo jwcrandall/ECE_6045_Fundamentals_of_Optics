@@ -33,11 +33,14 @@ When we rewrite in terms of velocity and set equal we arrive at $\frac{c}{v_r}\s
 \end{equation}
 
 \textbf{Exercise 2. Total Internal Reflection}\\
-\textbf{Q\&A} Derive the critical angle $\theta_i$ (Equation \ref{eq:2a}) for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture (Equation \ref{eq:2b}) of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory (Qualitatively Sinusoidal) of the ray in case of total internal reflection ? \\
+
+\textbf{Q} Derive the critical angle for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory of the ray in case of total internal reflection? \\
+
+\textbf{Q\&A} Derive the critical angle $\theta_i$ (Equation \ref{eq:e4}) for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture (Equation \ref{eq:2b}) of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory (Qualitatively Sinusoidal) of the ray in case of total internal reflection? \\
 
 \begin{figure}
 \centering\fbox{\includegraphics[height=2.0in]{figures/hw1/hw1_2.png}}
-\caption{Required $\theta$ in Equation \ref{eq:2a} for total internal reflection to occur}
+\caption{Maximum $\theta_i$ in Equation \ref{eq:e4} for total internal reflection to be maintained}
 \label{fig:2}
 \end{figure}
 
@@ -55,10 +58,10 @@ and employing alternate interior angles in Equation \ref{eq:e2}
 
 we can draw a relationship with the incident critical angle $\theta_{ci}$ and the refracted angle $\theta_{r}$.
 
-The refracted critical angle $\theta_{cr}$ results in a refracted ray that travels parallel to the materials interface. For a the generic problem with a interface between a material with index of refraction n and air with index of refraction 1, Snell's Law becomes, using radians, $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ which simplifies to $n\sin(\theta_c) = 1$. This signifies that for total internal reflection to occur in the generic  $n\sin(\theta_c) > 1$. We can adapt the generic problems critical angle condition $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ with the current problems given material index's resulting in  $1.5\sin(\theta_{ci}) = 1.4\sin(\theta_{cr} = \pi/2)$. Mapping from the generic problem we know that for total internal reflection to occur $1.5\sin(\theta_{ci}) > 1.4\sin(\theta_{cr} = \pi/2)$ which simplifies to Equation \ref{eq:e3} 
+The refracted critical angle $\theta_{cr}$ results in a refracted ray that travels parallel to the materials interface. For a the generic problem with a interface between a material with index of refraction n and air with index of refraction 1, Snell's Law becomes, using radians, $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ which simplifies to $n\sin(\theta_c) = 1$. This signifies that for total internal reflection to occur in the generic  $n\sin(\theta_c) > 1$. We can adapt the generic problems critical angle condition $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ with the current problems given material index's resulting in  $1.5\sin(\theta_{ci}) = 1.4\sin(\theta_{cr} = \pi/2)$. Mapping from the generic problem we know that for total internal reflection to occur $1.5\sin(\theta_{ci}) > 1.4\sin(\theta_{cr} = \pi/2)$ which \textbf{becomes} an equality at the minimum required angle for total internal refraction to occur as seen in Equation \ref{eq:e3}. 
 
 \begin{equation}\label{eq:e3}
-\sin\theta_{ci} > \frac{1.4}{1.5}
+\sin\theta_{ci} = \frac{1.4}{1.5}
 \end{equation}
 
 %Invoking our \textbf{Big Fat Assumption} and utilizing trigonometry's similar angles, utilizing radians, we know that $\pi/2 = \theta  + \theta_1$. Understanding that $\theta$ will be a positive angle off of our normal axis, we know that for total internal reflection to occur $\pi/2 - \theta > \arcsin(\frac{1.4}{1.5})$. We can solve for $\theta$ by multiplying by $-1$, showing us that for total internal reflection to occur 
@@ -67,19 +70,21 @@ The refracted critical angle $\theta_{cr}$ results in a refracted ray that trave
 %\theta < \pi/2 - \arcsin(\frac{1.4}{1.5})
 %\end{equation}
 
-When we combine Equations \ref{eq:e1}, \ref{eq:e2}, and \ref{eq:e3} we see that 
+When we combine Equations \ref{eq:e1}, \ref{eq:e2}, and \ref{eq:e3} we arrive at Equation \ref{eq:e4} which is the maximum allowed incident angle for total internal refraction to occur at the core cladding interface.
 
-\begin{equation}\label{eq:e3}
-\theta_{i} = \frac{1.4}{1.5}
+\begin{equation}\label{eq:e4}
+\theta_i = \arcsin(1.5\sin(\frac{\pi}{2} - \arcsin(\frac{1.4}{1.5}))) = 0.568676 \text{ rad} = 32.582735^{\circ}
 \end{equation}
 
-The numerical aperture is the incident angle of acceptance of the fiber, generally stated as $(\text{NA}) \equiv \sin(\theta_0) \leq \sqrt{n_1^2 - n_2^2}$, or referencing figure \ref{fig:2} and explicitly stated for our problem as $(\text{NA}) \equiv \sin(\theta) \leq \sqrt{1.5^2 - 1.4^2}$, resulting in 
+The Numerical Aperture (NA) is the Sine of the incident angle of acceptance of the fiber with the requirement that TIR (Total Internal Refraction) is happening in the waveguide expressed in Equation \ref{eq:e5}. 
 
-\begin{equation}\label{eq:2b}
-(\text{NA}) \leq 0.5385
+\begin{equation}\label{eq:e5}
+\text{NA} = \sin(0.568676) = 0.538517
 \end{equation}
 
-For a Fiber with a GRIN (Gradient Index) between $n_{max} = 1.5$ and $n_{min} = 1.4$, if the condition $n_{max}\sin(\theta_0)$ is respected, light in a uniform medium propagates in a straight line where as light in a gradient fiber propagates along a \textbf{sinusoidal} path.\\
+The NA can also be generally stated as $(\text{NA}) \equiv \sin(\theta_0) \leq \sqrt{n_1^2 - n_2^2}$, or referencing figure \ref{fig:2} and explicitly stated for our problem as $(\text{NA}) \equiv \sin(\theta) \leq \sqrt{1.5^2 - 1.4^2} = 0.538516 $. 
+
+For a Fiber with a GRIN (Gradient Index) between $n_{max} = 1.5$ and $n_{min} = 1.4$, if the condition $n_{max}\sin(\theta_0)$ is respected, light in a uniform medium propagates in a straight line where as light in a gradient fiber propagates along a \textbf{sinusoidal continuous} path in two dimensions and a \textbf{helical continuous} trajectory in three dimensions.\\
 
 \textbf{Exercise 3. Ellipsoidal refractor}\\
 \textbf{Q\&A} What is the dimension of the axes of an ellipsoidal refractor $(n=1.5)$ which focuses a plane wave ($\lambda_1 = \SI{1.55e-6}{\meter}$) impinging on axis (rays parallel to the major axis) in its focal point $f =  \SI{2.5e-2}{\meter}$? Would the same refractor perfectly focus at wavelength $\lambda_2 = \SI{0.5e-6}{\meter}$ considering that the refractive $n$ index varies to $1.6$? If yes why? If no, which would be the dimension of the ellipse that focuses it? Would the the ellipsoidal refractor be affected by any kind of aberration? Motivate your answer. Graduate Students: Additional point if you can use any ray tracing software for demonstrating the functioning of the refractor.\\
