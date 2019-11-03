@@ -2,6 +2,7 @@
 \begin{document}
 
 \textbf{Exercise 1. Fermat's Principle}\\
+
 \textbf{Q\&A} Lifeguard Alice can run at speed $v_r$ on the beach and swim at speed $v_s$ in the water, with $v_r > v_s$. What is the path (Determined by Alice starting angle $\theta_i$ in Equation \ref{sol1a}) that minimizes the time for reaching point B and saving Bob from drowning?\\
 
 \begin{figure}
@@ -32,7 +33,7 @@ When we rewrite in terms of velocity and set equal we arrive at $\frac{c}{v_r}\s
 \end{equation}
 
 \textbf{Exercise 2. Total Internal Reflection}\\
-\textbf{Q\&A} Derive the critical angle $\theta$ (Equation \ref{eq:2a}) for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture (Equation \ref{eq:2b}) of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory (Qualitatively Sinusoidal) of the ray in case of total internal reflection ? \\
+\textbf{Q\&A} Derive the critical angle $\theta_i$ (Equation \ref{eq:2a}) for which total internal reflection happens at the first interface (core-cladding). Hint: Both Fermat's principal and Snell's law are accepted for the derivation. What is the numerical aperture (Equation \ref{eq:2b}) of the fiber? Assuming a GRIN from 1.5 to 1.4 what is the trajectory (Qualitatively Sinusoidal) of the ray in case of total internal reflection ? \\
 
 \begin{figure}
 \centering\fbox{\includegraphics[height=2.0in]{figures/hw1/hw1_2.png}}
@@ -40,18 +41,36 @@ When we rewrite in terms of velocity and set equal we arrive at $\frac{c}{v_r}\s
 \label{fig:2}
 \end{figure}
 
-\textbf{Big Fat Assumption:} Ray entering cladding does not change ray trajectory, even though going form $n_{Air} = 1$ into $n_{Core} = 1.5$\\
+Snell's Law for refraction at an interfaces $n_{Air}\sin(\theta_i) = n_{Core}\sin(\theta_{r})$ is written in Equation  \ref{eq:e1}
 
-\textbf{Snells Law} for Total Internal Reflection $n\sin(\theta_i) = n^{\prime}\sin(\theta_{ref})$\\
+\begin{equation}\label{eq:e1}
+\sin(\theta_i) = 1.5\sin(\theta_{r}))
+\end{equation}
 
-The Critical angle $\theta_c$ of the incident ray results in a refracted ray that travels parallel to the materials interface. For the \textbf{generic} problem with a interface between a material with index of refraction n and air with index of refraction 1, Snell's Law becomes, using radians, $n\sin(\theta_c) = 1\sin(\pi/2)$ which simplifies to $n\sin(\theta_c) = 1$. This signifies that for total internal reflection to occur in the \textbf{generic}  $n\sin(\theta_c) > 1$. \\
+and employing alternate interior angles in Equation \ref{eq:e2}
 
-We can adapt the \textbf{generic} problems critical angle condition $n\sin(\theta_c) = 1\sin(\pi/2)$ with the \textbf{current} problems given material index's resulting in  $1.5\sin(\theta_1) = 1.4\sin(\theta_2 = \pi/2)$. Mapping from the \textbf{generic} problem we know that for total internal reflection to occur $1.5\sin(\theta_1) > 1.4\sin(\theta_2 = \pi/2)$ which simplifies to $\theta_1 > \arcsin(\frac{1.4}{1.5})$.\\
+\begin{equation}\label{eq:e2}
+\frac{\pi}{2} = \theta_{r} + \theta_{ci}
+\end{equation}
 
-Invoking our \textbf{Big Fat Assumption} and utilizing trigonometry's similar angles, utilizing radians, we know that $\pi/2 = \theta  + \theta_1$. Understanding that $\theta$ will be a positive angle off of our normal axis, we know that for total internal reflection to occur $\pi/2 - \theta > \arcsin(\frac{1.4}{1.5})$. We can solve for $\theta$ by multiplying by $-1$, showing us that for total internal reflection to occur 
+we can draw a relationship with the incident critical angle $\theta_{ci}$ and the refracted angle $\theta_{r}$.
 
-\begin{equation}\label{eq:2a}
-\theta < \pi/2 - \arcsin(\frac{1.4}{1.5})
+The refracted critical angle $\theta_{cr}$ results in a refracted ray that travels parallel to the materials interface. For a the generic problem with a interface between a material with index of refraction n and air with index of refraction 1, Snell's Law becomes, using radians, $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ which simplifies to $n\sin(\theta_c) = 1$. This signifies that for total internal reflection to occur in the generic  $n\sin(\theta_c) > 1$. We can adapt the generic problems critical angle condition $n\sin(\theta_{ci}) = 1\sin(\pi/2)$ with the current problems given material index's resulting in  $1.5\sin(\theta_{ci}) = 1.4\sin(\theta_{cr} = \pi/2)$. Mapping from the generic problem we know that for total internal reflection to occur $1.5\sin(\theta_{ci}) > 1.4\sin(\theta_{cr} = \pi/2)$ which simplifies to Equation \ref{eq:e3} 
+
+\begin{equation}\label{eq:e3}
+\sin\theta_{ci} > \frac{1.4}{1.5}
+\end{equation}
+
+%Invoking our \textbf{Big Fat Assumption} and utilizing trigonometry's similar angles, utilizing radians, we know that $\pi/2 = \theta  + \theta_1$. Understanding that $\theta$ will be a positive angle off of our normal axis, we know that for total internal reflection to occur $\pi/2 - \theta > \arcsin(\frac{1.4}{1.5})$. We can solve for $\theta$ by multiplying by $-1$, showing us that for total internal reflection to occur 
+
+%\begin{equation}\label{eq:2a}
+%\theta < \pi/2 - \arcsin(\frac{1.4}{1.5})
+%\end{equation}
+
+When we combine Equations \ref{eq:e1}, \ref{eq:e2}, and \ref{eq:e3} we see that 
+
+\begin{equation}\label{eq:e3}
+\theta_{i} = \frac{1.4}{1.5}
 \end{equation}
 
 The numerical aperture is the incident angle of acceptance of the fiber, generally stated as $(\text{NA}) \equiv \sin(\theta_0) \leq \sqrt{n_1^2 - n_2^2}$, or referencing figure \ref{fig:2} and explicitly stated for our problem as $(\text{NA}) \equiv \sin(\theta) \leq \sqrt{1.5^2 - 1.4^2}$, resulting in 
