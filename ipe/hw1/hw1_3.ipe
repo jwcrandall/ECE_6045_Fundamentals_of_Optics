@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.12">
-<info created="D:20180115135840" modified="D:20191103071457"/>
+<info created="D:20180115135840" modified="D:20191103201251"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -413,7 +413,6 @@ h
 <text matrix="1 0 0 1 64 -32" transformations="translations" pos="352 752" stroke="black" type="label" width="56.151" height="11.1" depth="2.58" valign="baseline" size="LARGE" style="math">n_{air}=1</text>
 <use matrix="1 0 0 1 64 -32" name="mark/disk(sx)" pos="320 704" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 64 -32" name="mark/disk(sx)" pos="320 704" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 64 -32" transformations="translations" pos="320 704" stroke="black" type="label" width="13.253" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">F</text>
 <path matrix="1 0 0 1 64 -32" stroke="black" pen="fat">
 128 704 m
 128 720 l
@@ -467,7 +466,6 @@ h
 <use name="mark/disk(sx)" pos="320 672" size="large" stroke="black"/>
 <use name="mark/disk(sx)" pos="256 672" size="large" stroke="black"/>
 <text transformations="translations" pos="320 672" stroke="black" type="label" width="13.296" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">C</text>
-<text transformations="translations" pos="256 672" stroke="black" type="label" width="13.253" height="11.764" depth="0" valign="baseline" size="LARGE" style="math">F</text>
 <path stroke="black" pen="fat">
 192 560 m
 192 560 l
@@ -502,5 +500,7 @@ h
 </path>
 <text transformations="translations" pos="256 768" stroke="black" type="label" width="8.849" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">a</text>
 <text transformations="translations" pos="336 720" stroke="black" type="label" width="7.167" height="11.955" depth="0" valign="baseline" size="LARGE" style="math">b</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="256 672" stroke="black" type="label" width="14.66" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f_1</text>
+<text transformations="translations" pos="384 688" stroke="black" type="label" width="14.66" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f_2</text>
 </page>
 </ipe>
