@@ -8,156 +8,163 @@
 \end{figure}
 
 \textbf{Exercise 1}\\
-Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident from the left on a two-lens system composed of two positive lenses $L1$ (focal length $f1>0$) and $L2$ (focal length $f2 >0)$ as shown in figure \ref{fig:2_1}.\\
 
-\textbf{Q\&A} What is the distance between the lenses ($d$) as a function of the focal lengths in order for the ray bundle outgoing from the second lens to be parallel? In other words, to obtain collimated beam; image at infinite? \textbf{Hint:} Use Image formation principle.\\
-
-When the collimated beam passes through bi-convex lens 1 it becomes a converging ray bundle with a focal length $f_1$. In order for the converging raybundle from the persepctive of the Lens 1 to act as an object point source divering ray bundle which once passed through lens 2. The focal length $f_2$ needs to be at the same point as $f_1 \therefore d = f_1 + f_2$\\ 
-
-\iffalse
-
-Due to the thin lens approximation, the lens thickness of $L_1$ and $L_2$ is negligible and $\therefore$ for elevation on either side of the lens $x_L = x_R = x$ . The system is surrounded by air with index $n_{air} = 1$. The ray transfer matrix for $L_1$ is
+\textbf{Full Q} Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident from the left on a two-lens system composed of two positive lenses $L1$ (focal length $f1>0$) and $L2$ (focal length $f2 >0)$ as shown in figure \ref{fig:2_1}.\\
+1. What is the distance between the lenses ($d$) as a function of the focal lengths in order for the ray bundle outgoing from the second lens to be parallel? In other words, to obtain collimated beam; image at infinite? \textbf{Hint:} Use Image formation principle.\\
+2. What is the optical power of this composite optical system and effective focal length (also referred to as \textbf{element focal length})? What is the value of the optical power for $d=f1+f2$? \textbf{Hint:} RTM?\\
+3. What are the propagation angle $\alpha_2$ and width $a_2$ (defined as $x_2$ in the figure \ref{fig:2_1} and matrices) of this outgoing ray bundle? \\
+4. What are the angular and lateral magnifications?\\
+5.How is the image (virtual, real), what about the object? (Please point them out)?\\
 
 
-\begin{equation}
-\begin{bmatrix}
-    \alpha_m \\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   &   0 \\
-    d   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    1   & -\frac{1}{f_1} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-     \alpha_{1} \\
-    x_1
-\end{bmatrix}
-\end{equation}
+\textbf{Intro} Parallel rays of elevation $x_1$ and propagation angle $\alpha_1$ are incident from the left on a two-lens system composed of two positive lenses $L1$ (focal length $f1>0$) and $L2$ (focal length $f2 >0)$ as shown in figure \ref{fig:2_1}.\\
 
-and the ray transfer matrix for $L_2$ is
+\textbf{Q\&A 1} What is the distance between the lenses ($d$) as a function of the focal lengths in order for the ray bundle outgoing from the second lens to be parallel? In other words, to obtain collimated beam; image at infinite? \textbf{Hint:} Use Image formation principle.\\
 
-\begin{equation}
-\begin{bmatrix}
-    \alpha_2 \\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   & -\frac{1}{f_2} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    \alpha_{m}  \\
-    x_2
-\end{bmatrix}
-\Rightarrow
-\begin{bmatrix}
-    1   & -\frac{1}{f_2} \\
-    0   &   1
-\end{bmatrix}^{-1}
-\begin{bmatrix}
-    \alpha_2 \\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    \alpha_{m}  \\
-    x_2
-\end{bmatrix}
-\end{equation}
+When the collimated beam passes through bi-convex lens 1 it becomes a converging ray bundle with a focal length $f_1$. In order for the converging ray bundle from the perspective of the Lens 1 to act as an object point source diverging ray bundle which once passed through lens 2. The focal length $f_2$ needs to be at the same point as $f_1 \therefore d = f_1 + f_2$\\ 
 
-substitution of matrix \ref{} into matrix \ref{} results in
+%Due to the thin lens approximation, the lens thickness of $L_1$ and $L_2$ is negligible and $\therefore$ for elevation on either side of the lens $x_L = x_R = x$ . The system is surrounded by air with index $n_{air} = 1$. The ray transfer matrix for $L_1$ is
 
-\begin{equation}
-\begin{bmatrix}
-    1   & -\frac{1}{f_2} \\
-    0   &   1
-\end{bmatrix}^{-1}
-\begin{bmatrix}
-    \alpha_2 \\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   &   0 \\
-    d   &   1
-\end{bmatrix}
-\begin{bmatrix}
-    1   & -\frac{1}{f_1} \\
-    0   &   1
-\end{bmatrix}
-\begin{bmatrix}
-     \alpha_{1} \\
-    x_1
-\end{bmatrix}
-\end{equation}
 
-solve for reciprocal matrix, and multiplying the matrices 
+%\begin{equation}
+%\begin{bmatrix}
+%    \alpha_m \\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    1   &   0 \\
+%    d   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_1} \\
+%    0   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%     \alpha_{1} \\
+%    x_1
+%\end{bmatrix}
+%\end{equation}
 
-\begin{equation}
-\begin{bmatrix}
-    \alpha_2 + \frac{x_2}{f_2}\\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1   & -\frac{1}{f_1} \\
-    d   & 1 -\frac{d}{f_1}  
-\end{bmatrix}
-\begin{bmatrix}
-    \alpha_{1} \\
-    x_1
-\end{bmatrix}
-\end{equation}
+%and the ray transfer matrix for $L_2$ is
 
-multiplying the right hand side matrices again
+%\begin{equation}
+%\begin{bmatrix}
+%    \alpha_2 \\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_2} \\
+%    0   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%    \alpha_{m}  \\
+%    x_2
+%\end{bmatrix}
+%\Rightarrow
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_2} \\
+%    0   &   1
+%\end{bmatrix}^{-1}
+%\begin{bmatrix}
+%    \alpha_2 \\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    \alpha_{m}  \\
+%    x_2
+%\end{bmatrix}
+%\end{equation}
 
-\begin{equation}
-\begin{bmatrix}
-    \alpha_2 + \frac{x_2}{f_2}\\
-    x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-    \alpha_1 - \frac{x_1}{f_1} \\
-    d\alpha_1 + x_1 - \frac{x_1 d}{f_1}
-\end{bmatrix}
-\end{equation}
+%substitution of matrix \ref{} into matrix \ref{} results in
 
-solve for the column vectors on left and right side\\
+%\begin{equation}
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_2} \\
+%    0   &   1
+%\end{bmatrix}^{-1}
+%\begin{bmatrix}
+%    \alpha_2 \\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    1   &   0 \\
+%    d   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_1} \\
+%    0   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%     \alpha_{1} \\
+%    x_1
+%\end{bmatrix}
+%\end{equation}
 
-\begin{equation}
-\sqrt{(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2} = \sqrt{(\alpha_1 - \frac{x_1}{f_1})^2 + (d\alpha_1 + x_1 - \frac{x_1 d}{f_1})^2}
-\end{equation}
+%solve for reciprocal matrix, and multiplying the matrices 
 
-square both sides of equation and solve for d
+%\begin{equation}
+%\begin{bmatrix}
+%    \alpha_2 + \frac{x_2}{f_2}\\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_1} \\
+%    d   & 1 -\frac{d}{f_1}  
+%\end{bmatrix}
+%\begin{bmatrix}
+%    \alpha_{1} \\
+%    x_1
+%\end{bmatrix}
+%\end{equation}
 
-\begin{equation}
-\begin{aligned}
-(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2 - (\alpha_1 - \frac{x_1}{f_1})^2 -x_1^2 & = d^2\alpha_1^2 + \frac{x_1^2 d^2}{f_1^2}\\ 
-                                                                               & + d \alpha_1 x_1 - \frac{x_1^2 d}{f_1} - \frac{x_1^2 d^2 \alpha_1}{f_1}
-\end{aligned}
-\end{equation}
+%multiplying the right hand side matrices again
 
-\begin{equation}
-\begin{aligned}
-(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2 - (\alpha_1 - \frac{x_1}{f_1})^2 -x_1^2 & = d^2(\alpha_1^2 + \frac{x_1^2}{f_1^2} - \frac{x_1^2\alpha_1}{f_1})\\ 
-                                                                                 & + d(\alpha_1 x_1 - \frac{x_1^2}{f_1})
-\end{aligned}
-\end{equation}
+%\begin{equation}
+%\begin{bmatrix}
+%    \alpha_2 + \frac{x_2}{f_2}\\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    \alpha_1 - \frac{x_1}{f_1} \\
+%    d\alpha_1 + x_1 - \frac{x_1 d}{f_1}
+%\end{bmatrix}
+%\end{equation}
 
-square both sides of equation and solve for d and expand \\
+%solve for the column vectors on left and right side\\
 
-Simplify with the knowledge that for the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$ and $\therefore$ we can relabel $\alpha_1 = \alpha_2 =\alpha$.\\
+%\begin{equation}
+%\sqrt{(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2} = \sqrt{(\alpha_1 - \frac{x_1}{f_1})^2 + (d\alpha_1 + x_1 - \frac{x_1 d}{f_1})^2}
+%\end{equation}
 
-\\ Trigonometrically we can state that $\tan(\alpha_m) = \frac{x_2}{d}$. For the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$.\\
+%square both sides of equation and solve for d
 
-\fi
+%\begin{equation}
+%\begin{aligned}
+%(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2 - (\alpha_1 - \frac{x_1}{f_1})^2 -x_1^2 & = d^2\alpha_1^2 + \frac{x_1^2 d^2}{f_1^2}\\ 
+%                                                                              & + d \alpha_1 x_1 - \frac{x_1^2 d}{f_1} - \frac{x_1^2 d^2 \alpha_1}{f_1}
+%\end{aligned}
+%\end{equation}
+
+%\begin{equation}
+%\begin{aligned}
+%(\alpha_2 + \frac{x_2}{f_2})^2 + (x_2)^2 - (\alpha_1 - \frac{x_1}{f_1})^2 -x_1^2 & = d^2(\alpha_1^2 + \frac{x_1^2}{f_1^2} - %\frac{x_1^2\alpha_1}{f_1})\\ 
+%                                                                                 & + d(\alpha_1 x_1 - \frac{x_1^2}{f_1})
+%\end{aligned}
+%\end{equation}
+
+%square both sides of equation and solve for d and expand \\
+
+%Simplify with the knowledge that for the outgoing ray bundle from the second lens to be parallel $\alpha_1 = \alpha_2$ and $\therefore$ we %can relabel $\alpha_1 = \alpha_2 =\alpha$.\\
+
+%\\ Trigonometrically we can state that $\tan(\alpha_m) = \frac{x_2}{d}$. For the outgoing ray bundle from the second lens to be parallel %$\alpha_1 = \alpha_2$.\\
+
+%\fi
 
 %\begin{equation}
 %\begin{aligned}
@@ -189,29 +196,18 @@ Simplify with the knowledge that for the outgoing ray bundle from the second len
 %\end{equation}
 
 
+\textbf{Q\&A 2} What is the optical power of this composite optical system and effective focal length (also referred to as \textbf{element focal length})? What is the value of the optical power for $d=f1+f2$? \textbf{Hint:} RTM?\\
 
+When solving this problem we utilize Figure \ref{fig:2_1} to define ray transfer matrix Equation \ref{eq:2_1} where we are considering a telescope with infinite conjugates
 
-
-
-
-\textbf{Q\&A} What is the optical power of this composite optical system and effective focal length (also referred to as \textbf{element focal length})? What is the value of the optical power for $d=f1+f2$? \textbf{Hint:} RTM?\\
-
-Optical power is equal to the reciprocal of the focal length of the device $P=\frac{1}{f}$. The element focal length for a two lens system is defined as $EFL = \frac{f_1 \times f_2}{f_1 + f_2 - d}$ $\therefore$ the optical power of a two lens system is defined as $P=\frac{f_1 + f_2 -d}{f_1 \times f_2}$ and $\therefore$ the optical power for $d=f_1 + f_2$ is shown to be $P=\frac{f_1 + f_2 - (f_1 + f_2)}{f_1 \times f_2} = 0$\\
-
-\textbf{Q\&A} What are the propagation angle $\alpha_2$ and width $a_2$ (defined as $x_2$ in the figure \ref{fig:2_1} and matrices) of this outgoing ray bundle? \\
-
-
-%$\alpha_2$ and width(z in Joseph Crandall's coordinate system) $z_2$ are spatially indicated in figure \ref{fig:2_1}.\\
-The ray transfer matrix for the $L_1$, $L_2$ telescope system is
-
-\begin{equation}
+\begin{equation}\label{eq:2_1}
 \begin{bmatrix}
     \alpha_2 \\
     x_2
 \end{bmatrix}
 =
 \begin{bmatrix}
-    1   & -\frac{1}{f_2} \\
+    1   &   -\frac{1}{f_2} \\
     0   &   1
 \end{bmatrix}
 \begin{bmatrix}
@@ -219,23 +215,117 @@ The ray transfer matrix for the $L_1$, $L_2$ telescope system is
     d   &   1
 \end{bmatrix}
 \begin{bmatrix}
-    1   & -\frac{1}{f_1} \\
+    1   &   -\frac{1}{f_1} \\
     0   &   1
 \end{bmatrix}
 \begin{bmatrix}
-    \alpha_{1}  \\
+    \alpha_{1} \\
     x_1
 \end{bmatrix}
 \end{equation}
 
+Multiplying Matrices in Equation \ref{eq:2_1} results in Equation \ref{eq:2_2}.
 
-\textbf{Q\&A} What are the angular and lateral magnifications?\\
+\begin{equation}\label{eq:2_2}
+\begin{bmatrix}
+    \alpha_2 \\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1 - \frac{d}{f_2}   &  \frac{d}{f_1 f_2} - \frac{1}{f_1} - \frac{1}{f_2} \\
+    d                   &   1 - \frac{d}{f_1}
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1} \\
+    x_1
+\end{bmatrix}
+\end{equation}
 
-The angular magnification is defined as $M_A = \frac{-s_o}{s_1}$ and the lateral magnification (sometimes called linear or transverse) is defined as $M_T = \frac{-s_i}{s_o}$. $s_o$ and $s_i$ are indicated spatially in figure \ref{fig:2_1}\\
+Where the optical power $P$ is defined in Equation \ref{eq:2_3}
 
-\textbf{Q\&A} How is the image (virtual, real), what about the object? (Please point them out)\\
+\begin{equation}\label{eq:2_3}
+P = \frac{d}{f_1 f_2} - \frac{1}{f_1} - \frac{1}{f_2} = - \frac{(f_1+f_2)-d}{f_1 f_2}
+\end{equation}
+
+and the effective focal length $EFL$ is defined in Equation \ref{eq:2_4}.
+
+\begin{equation}\label{eq:2_4}
+EFL = -\frac{1}{P} = \frac{f_1 f_2}{(f_1+f_2)-d}
+\end{equation}
+
+For $d = f_1 + f_2$ the optical power $P = - \frac{(f_1+f_2)-d}{f_1 f_2} = - \frac{(d)-d}{f_1 f_2} = 0$ and the focal length is $\infty$ resulting in a collimated beam and expressed in ray transfer matrix Equation \ref{eq:2_5}.
+
+\begin{equation}\label{eq:2_5}
+\begin{bmatrix}
+    \alpha_2 \\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1 - \frac{d}{f_2}   &  0 \\
+    d                   &  1 - \frac{d}{f_1}
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+%Optical power is equal to the reciprocal of the focal length of the device $P=\frac{1}{f}$. The element focal length for a two lens system is defined as $EFL = \frac{f_1 \times f_2}{f_1 + f_2 - d}$ $\therefore$ the optical power of a two lens system is defined as $P=\frac{f_1 + f_2 -d}{f_1 \times f_2}$ and $\therefore$ the optical power for $d=f_1 + f_2$ is shown to be $P=\frac{f_1 + f_2 - (f_1 + f_2)}{f_1 \times f_2} = 0$\\
+
+\textbf{Q\&A 3} What are the propagation angle $\alpha_2$ and width $a_2$ (defined as $x_2$ in the figure \ref{fig:2_1} and matrices) of this outgoing ray bundle given that $d=f_1 + f_2?\\
+
+Using Equation \ref{eq:2_5} we calculate $\alpha_2$ in Equation \ref{eq:2_6}
+
+\begin{equation}\label{eq:2_6}
+\alpha_2 = (1-\frac{d}{f_2})\alpha_1 = (1-\frac{f_1}{f_2} - \frac{f_2}{f_2})\alpha_1 = \frac{-f_1}{f_2}\alpha_1 
+\end{equation}
+
+and we calculate $x_2$ in Equation \ref{eq:2_7} where for $\alpha_1 = 0$, $x_2 = -\frac{f_2}{f_1}x_1$.
+
+\begin{equation}\label{eq:2_7}
+x_2 = d \alpha_1 + (1-\frac{d}{f_1})x_1 = (f_1 +  f_2)\alpha_1 + \frac{f_1 - d}{f_1}x_1
+\end{equation}
+
+%$\alpha_2$ and width(z in Joseph Crandall's coordinate system) $z_2$ are spatially indicated in figure \ref{fig:2_1}.\\
+%The ray transfer matrix for the $L_1$, $L_2$ telescope system is
+
+%\begin{equation}
+%\begin{bmatrix}
+%    \alpha_2 \\
+%    x_2
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_2} \\
+%    0   &   1
+%\end{bmatrix}
+%begin{bmatrix}
+%    1   &   0 \\
+%    d   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%    1   & -\frac{1}{f_1} \\
+%    0   &   1
+%\end{bmatrix}
+%\begin{bmatrix}
+%    \alpha_{1}  \\
+%    x_1
+%\end{bmatrix}
+%\end{equation}
+
+
+\textbf{Q\&A 4} What are the angular and lateral magnifications?\\
+
+The angular magnification is defined as $M_A = \frac{-s_o}{s_1} = \frac{\alpha_2}{\alpha_1} = -\frac{f_1}{f_2}$ and the lateral magnification (sometimes called linear or transverse) is defined as $M_T = \frac{-s_i}{s_o} = \frac{x_2}{x_1} = \frac{-f_2}{f_1} = \frac{1}{M_A}$. $s_o$ and $s_i$ are indicated spatially in figure \ref{fig:2_1}\\
+
+\textbf{Q\&A 5} How is the image (virtual, real), what about the object? (Please point them out)\\
 
 At great object $O$ distances the incident rays are effectively parallel and the object is real. The image $I$ is spatially indicated in figure \ref{fig:2_1} and the final image is virtual, enlarged, and inverted. 
+
+In the case of infinite conjugates telescope the image is at infinite and the object is real at infinite distance. The intermediate image is at finite distance lens $1$ from $L_1$ and $f_2$ from lens $2$.
+
 
 
 \newpage
