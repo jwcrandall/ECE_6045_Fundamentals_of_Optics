@@ -20,8 +20,37 @@
 \textbf{Q\&A} In Wave Optics, the use of complex numbers, in particular phasors, is prevalent because it considerably simplifies calculations of interference and diffraction. The goal of this exercise is to remind you of some basic complex arithmetic. Let $z_1 = 3 + i4$, $z_2 = 1-i$, $z_3 = 5e^{i\pi /3}$, and $z_4=5e^{i4\pi/3}$. Compute, in the easiest way possible, and without the use of electronic calculators, the following quantities:
 
 \begin{itemize}
-  \item $|z_1|$, $|z_2|$, $|z_3|$, $|z_4|$, $|z_2|$,
-  \item Another entry in the list
+  \item $|z_1|$, $|z_2|$, $|z_3|$, $|z_4|$, $\angle z_1$, $\angle z_2$, $\angle z_3$, $\angle z_4$;
+  \item $\angle -z_1$, $\angle z_2^*$,$\angle -z_3$, $\angle z_4^*$; ($z^*$ denotes the complex conjugate of the complex number $z$;)
+  \item $z_1 + z_2$, $z_1^* + z_2$, $z_3 + z_4$, $z_1 - z_4^*$;
+  \item the magnitude and phases of  $z_1 z_2$, $z_3 z_4$, $z_3 / z_4$, $\sqrt{z_3}$;
+  \item $z_1 + e^{i \pi}$, $e^{i \pi / 2}z_2$, $e^{i\pi}z_3$, $\sqrt{e^{-i\pi}z_4}$.
 \end{itemize}
+
+\textbf{Wave superposition}\\
+\textbf{Q\&A} Consider the following two waves,
+
+\begin{equation}\label{eq:ws_1}
+f_1(x,z,t) = 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{x^2}{2z} \right] -2\pi 10t \right)
+\end{equation}
+
+\begin{equation}\label{eq:ws_2}
+f_2(x,z,t) = 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{(x-5)^2}{2z} \right] -2\pi 10t + \frac{\pi}{3} \right)
+\end{equation}
+
+What is the physical interpretation of these waves? Be as detailed as possible.\\
+
+If these waves approximately satisfy the (Helmholtz) Wave Equation, what is the phase velocity?\\
+
+Using trigonometric identities, calculate the wave that results from the "coherent superposition" of the two waves, $i.e. f(x,z,t) \equiv f_1(x,z,t) + f_2(x,z,t)$.\\
+
+Now express each wave as a phasor, add the two phasors and compare the result to the phasor of $f(x,z,t)$ from part (b).\\
+
+\textbf{Plane waves and phasor representations}\\
+\textbf{Q\&A} Throughout this problem, by "real expression" of a wave we mean the space-time representation, e.g. $f(x,y,z,t) = A\cos(kz-\omeega t)$ is a plane wave of wave-vector magnitude $k$ and frequency $\omega$ propagating in the direction of the $\hat{z}$ coordinate axis. By "phasor expression" we mean the complex representation of the wave, e.g. $Ae^{ikz}$ for the same wave.\\
+
+\textbf{Q\&A} Write the real and phasor expression for a plane wave $f_1(x,y,z,t)$ propagating at an angle $\ang{30}$ relative to the $hat{z}$ axis on the $xz$-plane ($i.e.$, the plane $y=0$). The wavelength is $\lambda = \SI{1}{\mu \meter}$, and the wave speed is $c = \SI{3e8}{\metre \second^{-1}}$.\\
+
+\textbf{Q\&A} Write the real and phasor expressions for a place wave $f_2(x,y,z,t)$ of the same wavelength and wave speed as $f_1$ but propagating at angle $\ang{60}$ relative to the $\hat{z}$ axis on the $yz$-plane.
 
 \end{document}
