@@ -138,11 +138,120 @@ d = \frac{n (R_1 - R_2)} {(n-1)^2}
 \textbf{Exercise 7.10}\\
 \textbf{Q\&A} The electric field of a standing electromagentic plane wave is given by $E(x,t) = 2E_0 \sin (kx) \cos(\omega t)$. Derive an expression for $B(x,t)$. (You might want to take another look at Section 3.2). Make a sketch of the standing wave.\\
 
-\textbf{Exercise 6.17}\\
+
+
+\textbf{Exercise 6.17}\\ %6.23 in 5thed
 \textbf{Q\&A} Show that the planar surface of a concave-planar or convex-planar lens doesn't contribute to the system matrix.\\
 
-\textbf{Exercise 6.18}\\
+We begin by defining the ray transfer matrix for a thick convex planar lens in Equation \ref{eq:617_1}.
+
+\begin{equation}\label{eq:617_1}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   &   -\frac{1-n}{R_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    \frac{d}{n}   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   -\frac{n-1}{R_1} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+We know that for a plane surface $R_2 = \infty$ which contributes to a unit matrix in Equation \ref{eq:617_2} and proves that that the planar surface does not contribute to the system matrix. 
+
+\begin{equation}\label{eq:617_2}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   &   -\frac{1-n}{R_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    \frac{d}{n}   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}\\
+
+\textbf{Exercise 6.18}\\ %6.24 in 5th ed
 \textbf{Q\&A} Compute the system matrix for a thick biconvex lens of index $1.5$ having radii of $0.5$ and $0.25$ and a thickness of $0.3$ (in any units you like). Check that $|A| = 1$.\\
+
+We begin by defining the system matrix for a thick biconvex lens in Equation \ref{eq:617_1}.
+
+\begin{equation}\label{eq:617_1}
+A =
+\begin{bmatrix}
+    1   &   -\frac{1-n}{R_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    \frac{d}{n}   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   -\frac{n-1}{R_1} \\
+    0   &   1
+\end{bmatrix}
+\end{equation}
+
+
+which by matrix multiplication we arrive at Equation \ref{eq:617_2}
+
+\begin{equation}\label{eq:617_2}
+A=
+\begin{bmatrix}
+    1  - \frac{d}{n}\frac{1-n}{R_2}   &  -\left[ (n-1) \left(\frac{1}{R_1}-\frac{1}{R_2}\right)  + \frac{d}{n}\frac{(n-1)^2}{R_1 R_2} \right]\\
+    \frac{d}{n}                       &   1  - \frac{d}{n}\frac{n-1}{R_1}
+\end{bmatrix}
+\end{equation}
+
+and by substituting known values we populate Equation \ref{eq:617_3}
+
+\begin{equation}\label{eq:617_3}
+A=
+\begin{bmatrix}
+    1  - \frac{0.3}{1.5}\frac{1-1.5}{0.25} &  -\left[ (1.5-1) \left(\frac{1}{0.5}-\frac{1}{0.25}\right)  + \frac{0.3}{1.5}\frac{(1.5-1)^2}{(0.5)(0.25)} \right]\\
+    \frac{0.3}{1.5}                       &   1  - \frac{0.3}{1.5}\frac{1.5-1}{0.5}
+\end{bmatrix}
+\end{equation}
+
+which equates to Equation \ref{eq:617_4}.
+
+\begin{equation}\label{eq:617_4}
+A=
+\begin{bmatrix}
+    1.4 &  0.6\\
+    0.2 &   0.8
+\end{bmatrix}
+\end{equation}
+
+By taking the determinate of Equation \ref{eq:617_4} we are left with Equation \ref{eq:617_5}.
+
+\begin{equation}\label{eq:617_5}
+|A|= (1.4)(0.8) - (0.6)(0.2) = 1.12 - 0.12 = 1
+\end{equation}
 
 \textbf{Complex arithmetic}\\
 \textbf{Q\&A} In Wave Optics, the use of complex numbers, in particular phasors, is prevalent because it considerably simplifies calculations of interference and diffraction. The goal of this exercise is to remind you of some basic complex arithmetic. Let $z_1 = 3 + i4$, $z_2 = 1-i$, $z_3 = 5e^{i\pi /3}$, and $z_4=5e^{i4\pi/3}$. Compute, in the easiest way possible, and without the use of electronic calculators, the following quantities:
