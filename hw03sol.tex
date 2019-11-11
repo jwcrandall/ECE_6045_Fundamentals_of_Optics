@@ -1,8 +1,26 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
 
-\textbf{Exercise 7.13}\\
-\textbf{Q\&A} A standing wave is given by $E=100\sin(\frac{2}{3}\pi x) \cos( 5\pi t)$. Determine two waves that can be superimposed to generate it.\\
+\textbf{Exercise 7.13}\\ %5th7.16*
+\textbf{Q\&A} A standing wave is given by $E=100\sin(\frac{2}{3}\pi x) \cos( 5\pi t )$. Determine two waves that can be superimposed to generate it.\\
+
+We state a trigonometric product identity in Equation \ref{eq:713_1}
+
+\begin{equation}\label{eq:713_1}
+\sin(\alpha)\cos(\beta) = \frac{\sin(\alpha + \beta) + \sin(\alpha - \beta)}{2}
+\end{equation}
+
+and rewrite the $\sin$ and $\cos$ component of the given standing wave in the form of Equation \ref{eq:713_1} in Equation \ref{eq:713_2}.
+
+\begin{equation}\label{eq:713_2}
+\sin(\frac{2}{3}\pi x)\cos(5\pi t) = \frac{\sin(\frac{2}{3}\pi x + 5\pi t) + \sin(\frac{2}{3}\pi x - 5\pi t)}{2}
+\end{equation}
+
+We can now define $E$ as the superposition of two waves in Equation \ref{eq:713_2} where $50 \sin(\frac{2}{3}\pi x + 5\pi t)$ is traversed in the negative x axis and $50 \sin(\frac{2}{3}\pi x - 5\pi t)$ is traversed in the positive x axis.
+
+\begin{equation}\label{eq:713_2}
+E = 50 \sin(\frac{2}{3}\pi x + 5\pi t) + 50 \sin(\frac{2}{3}\pi x - 5\pi t)
+\end{equation}
 
 \textbf{Exercise 6.3}\\
 \textbf{Q\&A} Write an  expression for the thickness $d$ of a double-convex lens such that its focal length is infinite.\\
