@@ -25,6 +25,116 @@ E = 50 \sin(\frac{2}{3}\pi x + 5\pi t) + 50 \sin(\frac{2}{3}\pi x - 5\pi t)
 \textbf{Exercise 6.3}\\
 \textbf{Q\&A} Write an  expression for the thickness $d$ of a double-convex lens such that its focal length is infinite.\\
 
+We begin by defining the ray transfer matrix for a thick lens in Equation \ref{eq:63_1}.
+
+\begin{equation}\label{eq:63_1}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1   &   -\frac{1-n}{R_2} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   0 \\
+    \frac{d}{n}   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   -\frac{n-1}{R_1} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+We then multiply matrices from Equation \ref{eq:63_1} and arrive at Equation \ref{eq:63_2}
+
+\begin{equation}\label{eq:63_2}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1  - \frac{d}{n}\frac{1-n}{R_2}   &   -\frac{1-n}{R_2} \\
+    \frac{d}{n}   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    1   &   -\frac{n-1}{R_1} \\
+    0   &   1
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+and multiply matrices from Equation \ref{eq:63_2} and arrive at Equation \ref{eq:63_3}.
+
+\begin{equation}\label{eq:63_3}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1  - \frac{d}{n}\frac{1-n}{R_2}   &  -\frac{n-1}{R_1}  + \frac{d}{n}\frac{1-n}{R_2}\frac{n-1}{R_1} -\frac{1-n}{R_2}   \\
+    \frac{d}{n}                       &   1  - \frac{d}{n}\frac{n-1}{R_1}
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+where Equation \ref{eq:63_3} can be simplified to Equation \ref{eq:63_4}.
+
+\begin{equation}\label{eq:63_4}
+\begin{bmatrix}
+    \alpha_2 n_{air}\\
+    x_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1  - \frac{d}{n}\frac{1-n}{R_2}   &  -\left[ (n-1) \left(\frac{1}{R_1}-\frac{1}{R_2}\right)  + \frac{d}{n}\frac{(n-1)^2}{R_1 R_2} \right]\\
+    \frac{d}{n}                       &   1  - \frac{d}{n}\frac{n-1}{R_1}
+\end{bmatrix}
+\begin{bmatrix}
+    \alpha_{1}n_{air} \\
+    x_1
+\end{bmatrix}
+\end{equation}
+
+From Equation \ref{eq:63_4} we can define the Effective focal Length in Equation \ref{eq:63_5}
+
+\begin{equation}\label{eq:63_5}
+-\frac{1}{EFL} = -\left[ (n-1) \left(\frac{1}{R_1}-\frac{1}{R_2}\right)  + \frac{d}{n}\frac{(n-1)^2}{R_1 R_2} \right]
+\end{equation}
+
+and given that the focal length is infinite we can state that $\frac{1}{\infty} = 0$ and rewrite \ref{eq:63_5} in the form of Equation \ref{eq:63_6}
+
+\begin{equation}\label{eq:63_6}
+-\left(\frac{1}{R_1}-\frac{1}{R_2}\right) =  \frac{d}{n}\frac{(n-1)^2}{R_1 R_2} \right]
+\end{equation}
+
+solve for $d$ in Equation \ref{eq:63_7}
+
+\begin{equation}\label{eq:63_7}
+\frac{(R_1 - R_2) }{R_1 R_2} \frac{R_1 R_2}{(n-1)^2}} n =  d
+\end{equation}
+
+and simplify in in Equation \ref{eq:63_8} to arrive at distance $d$.
+
+\begin{equation}\label{eq:63_8}
+d = \frac{n (R_1 - R_2)} {(n-1)^2} 
+\end{equation}
+
+%%% NOTE the square in the denominator may be incorrect.
+
 \textbf{Exercise 7.10}\\
 \textbf{Q\&A} The electric field of a standing electromagentic plane wave is given by $E(x,t) = 2E_0 \sin (kx) \cos(\omega t)$. Derive an expression for $B(x,t)$. (You might want to take another look at Section 3.2). Make a sketch of the standing wave.\\
 
