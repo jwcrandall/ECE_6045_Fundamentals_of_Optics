@@ -321,13 +321,89 @@ f_1(x,z,t) = 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{x^2}{2z} \right] -2\pi 
 f_2(x,z,t) = 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{(x-5)^2}{2z} \right] -2\pi 10t + \frac{\pi}{3} \right)
 \end{equation}
 
-What is the physical interpretation of these waves? Be as detailed as possible.\\
+\textbf{Q\&A} What is the physical interpretation of these waves? Be as detailed as possible.\\
 
-If these waves approximately satisfy the (Helmholtz) Wave Equation, what is the phase velocity?\\
+A spherical wave front under the paraxial approximation where $z >> |x|, |y|$ such that $r=\sqrt{x^2 + y^2 + z^2} = z\sqrt{1+\frac{x^2 + y^2}{z^2}} \approx z + \frac{x^2 + y^2}{2z}$ leads to a spherical wave with a generic form of $E(x,y,z,t) = \frac{A_0}{\lambda_z}\cos \left[kz + k \right]$. For the case of $f_1$, the originating point source is centered at $(0,0)$ and the additional parameters are $A=5$, $\lambda = 17$, and $\nu = 10$. The second wave $f_2$, shares the same parameters as $f_1$; however the originating point source is shifted at $x_s=5$ and the wave is phase shifted by $phi=\pi/3$.\\
 
-Using trigonometric identities, calculate the wave that results from the "coherent superposition" of the two waves, $i.e. f(x,z,t) \equiv f_1(x,z,t) + f_2(x,z,t)$.\\
+\textbf{Q\&A} If these waves approximately satisfy the (Helmholtz) Wave Equation, what is the phase velocity?\\
 
-Now express each wave as a phasor, add the two phasors and compare the result to the phasor of $f(x,z,t)$ from part (b).\\
+For both $f_1$ and $f_2$ frequency $\nu = 10$ and wavelength $\lambda = 17$ and $\therefore$ Phase velocity $v = \lambda \nu = 170$\\ 
+
+\textbf{Q\&A} Using trigonometric identities, calculate the wave that results from the "coherent superposition" of the two waves, $i.e. f(x,z,t) \equiv f_1(x,z,t) + f_2(x,z,t)$. \\
+
+\begin{equation}\label{eq:ws_3}
+\begin{aligned} 
+f(x, z, t)=& f_{1}(x, z, t)+f_{2}(x, z, t) \\
+          =& 5\left[\cos \left(\frac{2 \pi}{17}\left[z+\frac{x^{2}}{2 z}\right]-2 \pi 10 t\right)\right.\\ 
+          &\left.+\cos \left(\frac{2 \pi}{17}\left[z+\frac{(x-5)^{2}}{2 z}\right]-2 \pi 10 t+\frac{\pi}{3}\right)\right] \\
+          =& 5\left[\cos \left(\phi_{1}\right)+\cos \left(\phi_{2}\right)\right] \\
+          =& 10\left[\cos \left(\frac{\phi_{1}+\phi_{2}}{2}\right) \cos \left(\frac{\phi_{1}-\phi_{2}}{102z}\right)\right] \\
+          =& 10\left[\cos \left(\frac{12 \pi z^{2}+6 \pi x^{2}-2040 \pi t z-30 \pi x+75 \pi+17 \pi z}{2}\right)\right.\\ 
+          &\left.\cdot \cos \left(\frac{30 \pi x-75 \pi-17 \pi z}{102 z}\right)\right] 
+\end{aligned}
+\end{equation}
+
+%\begin{equation}\label{eq:ws_3}
+%\begin{split}
+%f(x,z,t) = 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{x^2}{2z} \right] -2\pi 10t \right) %\\
+% + 5\cos \left(\frac{2 \pi}{17} \left[ z+\frac{(x-5)^2}{2z} \right] -2\pi 10t + %\frac{\pi}{3} \right) 
+%\end{split}
+%\end{equation}
+
+%Equation \ref{eq:ws_3} can be rewritten as equation \ref{eq:ws_4}
+
+%\begin{equation}\label{eq:ws_4}
+%\begin{split}
+%f(x,z,t) = 5[\cos(\phi_1) + cos(\phi_2)] 
+%\end{split}
+%\end{equation}
+
+%Through the use of the Sum Identity we can rewrite Equation \ref{eq:ws_4} as Equation %\ref{eq:ws_5}.
+
+%\begin{equation}\label{eq:ws_5}
+%\begin{split}
+%f(x,z,t) = 10[\cos(\frac{\phi_1 + \phi_2}{2}) + \cos(\frac{\phi_1 - \phi_2}{2})] \\
+%= 10[\cos(\frac{12 \pi z^2 + 6 \pi x^2 -2040\pi t z- 30 \pi x + 75 \pi + 17 \pi z}{102z}) %\\
+%\times \cos(\frac{30 \pi x - 75\pi - 17\pi z}{102z})]
+%\end{split}
+%\end{equation}
+
+
+\textbf{Q\&A} Now express each wave as a phasor, add the two phasors and compare the result to the phasor of $f(x,z,t)$ from part (b).\\
+
+\begin{equation}\label{eq:ws_4}
+\begin{aligned} 
+\begin{aligned} f_{p 1}(x, z, t) &=5 \exp \left(i \frac{2 \pi}{17}\left[z+\frac{x^{2}}{2 z}\right]-i 2 \pi 10 t\right) \\ 
+f_{p 2}(x, z, t) &=5 \exp \left(i \frac{2 \pi}{17}\left[z+\frac{(x-5)^{2}}{2 z}\right]-i 2 \pi 10 t+i \frac{\pi}{3}\right) \end{aligned}
+\end{aligned}
+\end{equation}
+
+The coherent superposition of the two waves is \\
+
+\begin{equation}\label{eq:ws_5}
+\begin{aligned} 
+f_{p}(x, z, t) = & f_{p 1}(x, z, t)+f_{p 2}(x, z, t) \\
+               = & 5\left[\exp \left(i \frac{2 \pi}{17}\left[z+\frac{x^{2}}{2 z}\right]-i 2 \pi 10 t\right)\right.\\ 
+                 & \left.+\exp \left(i \frac{2 \pi}{17}\left[z+\frac{(x-5)^{2}}{2 z}\right]-i 2 \pi 10 t+i \frac{\pi}{3}\right)\right] \\
+               = & 5 \left[ \exp \left(i \frac{2 \pi}{17}\left[z+\frac{x^{2}}{2 z}\right]-i 2 \pi 10 t\right) \\ 
+                 & \left.+ \exp \left(i \frac{2 \pi}{17}\left[z+\frac{x^{2}}{2 z}\right]-i 2 \pi 10 t\right) \\
+                 & \left. \cdot \exp \left(i \frac{2 \pi}{17}\left[-\frac{5 x}{2 z}+\frac{25}{2 z}\right]+i \frac{\pi}{3}\right)\right] \\
+               = & 5 \exp \left(i \phi_{1}\right)\left[1+\cos \left(\frac{2 \pi}{17}\left[\frac{25-5 x}{2 z}\right]+\frac{\pi}{3}\right)\right.\\ 
+                 & \left.+i \sin \left(\frac{2 \pi}{17}\left[\frac{25-5 x}{2 z}\right]+\frac{\pi}{3}\right)\right]\\
+               = & 5\left[\cos \left(\phi_{1}\right)+i \sin \left(\phi_{1}\right)\right]\left[1+\cos \left(\phi_{3}\right)+i \sin \left(\phi_{3}\right)\right] \end{aligned}
+\end{aligned}
+\end{equation}
+
+If we take the real part of Equation \ref{eq:ws_5}
+
+\begin{equation}\label{eq:ws_6}
+\begin{aligned} 
+\begin{aligned} f(x, z, t) & = \operatorname{Re}\left\{f_{p}(x, z, t)\right\} \\ 
+                           & = 5\left[\cos \left(\phi_{1}\right)+\cos \left(\phi_{1}\right) \cos \left(\phi_{3}\right)-\sin \left(\phi_{1}\right) \sin \left(\phi_{3}\right)\right] \\ 
+                           & =5\left[\cos \left(\phi_{1}\right)+\cos \left(\phi_{1}+\phi_{3}\right)\right] \\ 
+                           & =5\left[\cos \left(\phi_{1}\right)+\cos \left(\phi_{2}\right)\right] \end{aligned}
+\end{aligned}
+\end{equation}
 
 \textbf{Plane waves and phasor representations}\\
 \textbf{Q\&A} Throughout this problem, by "real expression" of a wave we mean the space-time representation, e.g. $f(x,y,z,t) = A\cos(kz-\omeega t)$ is a plane wave of wave-vector magnitude $k$ and frequency $\omega$ propagating in the direction of the $\hat{z}$ coordinate axis. By "phasor expression" we mean the complex representation of the wave, e.g. $Ae^{ikz}$ for the same wave.\\
