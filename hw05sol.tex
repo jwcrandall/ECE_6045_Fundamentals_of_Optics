@@ -72,23 +72,48 @@ Bright fringes occur when $\Delta \phi = 2\pi m$, $m=1,2,3,\cdot$ which allows u
 \label{fig:53}
 \end{figure}
 
-\begin{array}{l}{\text { After reflecting off the mirror, the lens is effectively imaging a point source at a }} \\ {\text { distance }(d-f)+d=2 d-f ; \text { thus it forms a point source image at } S_{i} \text { , where }} \\ {\qquad \frac{1}{S_{i}}=\frac{1}{f}-\frac{1}{S_{0}}=\frac{1}{f}-\frac{1}{2 d-f}=\frac{2(d-f)}{f(2 d-f)}} \\ {S_{i}=\frac{f(2 d-f)}{2(d-f)}} \\ {\text { If } d=f, \text { i.e. } S_{i}=\infty, \text { we get a plane back and the output is a uniform }} \\ {\text { intensity, because we would be observing the interference of two on-axis plane }} \\ {\text { waves. }} \\ {\text { If } d \neq f, \text { we get circular fringes due to the interference of a plane wave and a }} \\ {\text { spherical wave. }}\end{array}
+%\begin{array}{l}{\text { After reflecting off the mirror, the lens is effectively imaging a point source at a }} \\ {\text { distance }(d-f)+d=2 d-f ; \text { thus it forms a point source image at } S_{i} \text { , where }} \\ {\qquad \frac{1}{S_{i}}=\frac{1}{f}-\frac{1}{S_{0}}=\frac{1}{f}-\frac{1}{2 d-f}=\frac{2(d-f)}{f(2 d-f)}} \\ {S_{i}=\frac{f(2 d-f)}{2(d-f)}} \\ {\text { If } d=f, \text { i.e. } S_{i}=\infty, \text { we get a plane back and the output is a uniform }} \\ {\text { intensity, because we would be observing the interference of two on-axis plane }} \\ {\text { waves. }} \\ {\text { If } d \neq f, \text { we get circular fringes due to the interference of a plane wave and a }} \\ {\text { spherical wave. }}\end{array}
 
 \end{enumerate}
 % -----------------------------------------------------
 % Ex 2 
 % -----------------------------------------------------
 \item{Consider a sinusoidal amplitude grating.}
-$$g_t(x)=\frac{1}{2}\left[ 1+m\cos(\frac{2\pi x}{A}) + \phi) \right]$$
+$$g_t(x)=\frac{1}{2}\left[ 1+m\cos(\frac{2\pi x}{\Lambda}) + \phi) \right]$$
 at $z=0$. Illuminated by an off-axis plane wave.
-$$g(x,z=0)=\exp(\frac{2\pi}{\lambda}i \theta x)$$
+$$g_{-}(x,z=0)=\exp(\frac{2\pi}{\Lambda}i \theta x)$$
 \begin{enumerate}
 \item{Derive the expression of $g_{\text{+}}(x,z=0)$}
+
+For the amplitude grating, the geometry along the x-axis is considered because $z=0$. The Fresnel diffraction pattern, the field just behind the grating illuminated by the plane wave, shown in Figure \ref{fig:521} is defined in  Equation \ref{eq:521}.
+
+\begin{figure}
+\centering\fbox{\includegraphics[height=2.0in]{figures/hw5/hw5q2a.png}}
+\caption{Sinusoidal amplitude grating}
+\label{fig:521}
+\end{figure}
+
+\begin{equation}\label{eq:521}
+\begin{split}
+g_{+}(x, z=0) & = g_{t}(x) g_{-}(x, z=0) \\
+ & = \frac{1}{2}\left[ 1+m\cos(\frac{2\pi x}{\Lambda}) + \phi) \right] \exp(\frac{2\pi}{\Lambda}i \theta x)
+\end{split}
+
+\end{equation}
+
 \item{What would be the interference pattern at infinity (Today's lecture)}
 \end{enumerate}
 % -----------------------------------------------------
 % Ex 3 
 % -----------------------------------------------------
-\item{Derive the interference pattern of a plane wave passing through a double split for $D=10\lambda$. Use Huygens' principle and derive the superposition of the waves at a distance $z=L$.}
+\item{Derive the interference pattern of a plane wave passing through a double split for $D=10\lambda$. Use Huygens' principle and derive the superposition of the waves at a distance $z=L$.}\\
+This problem utilizes Young's Double Slit Experiment assuming the slits are point sources. Huygenes 
+
+\begin{figure}
+\centering\fbox{\includegraphics[width=4.0in]{figures/hw5/hw5q3.png}}
+\caption{Two holes in an opaque screen with incoming plane wave on-axis}
+\label{fig:53}
+\end{figure}
+
 \end{enumerate}
 \end{document}
