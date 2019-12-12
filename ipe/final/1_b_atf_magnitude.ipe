@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.12">
-<info created="D:20191211110632" modified="D:20191211125253"/>
+<info created="D:20191211110632" modified="D:20191212094954"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -504,109 +504,30 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 0 -192" stroke="black" arrow="normal/normal">
-64 512 m
-64 768 l
-</path>
-<path matrix="1 0 0 1 0 -16" stroke="black" arrow="normal/normal">
-48 464 m
-640 464 l
-</path>
-<path stroke="black">
-192 576 m
-520 0 0 520 696 448 192 320 a
-</path>
-<path stroke="black">
-192 320 m
-520 0 0 520 -312 448 192 576 a
-</path>
-<path stroke="black">
-448 576 m
-520 0 0 520 952 448 448 320 a
-</path>
-<path stroke="black">
-448 320 m
-520 0 0 520 -56 448 448 576 a
-</path>
-<path stroke="black" pen="fat">
-320 320 m
-320 384 l
-320 384 l
-</path>
-<path stroke="black">
-320 576 m
-320 512 l
+<path layer="alpha" matrix="1 0 0 1 -64 0" stroke="black" arrow="normal/normal">
+320 384 m
 320 512 l
 </path>
-<path stroke="black" pen="fat">
-368 512 m
-272 512 l
+<path matrix="1 0 0 1 -64 0" stroke="black" pen="ultrafat">
+256 384 m
+256 448 l
 </path>
-<path stroke="black" pen="fat">
-368 384 m
-272 384 l
-272 384 l
+<path matrix="1 0 0 1 -64 0" stroke="black" pen="ultrafat">
+256 448 m
+384 448 l
 </path>
-<path stroke="black">
-288 512 m
-288 384 l
-</path>
-<path stroke="black">
-352 384 m
-352 448 l
-336 448 l
-336 512 l
+<path matrix="1 0 0 1 -64 0" stroke="black" pen="ultrafat">
+384 448 m
+384 384 l
 </path>
 <path stroke="black" arrow="normal/normal">
-576 320 m
-576 576 l
+128 384 m
+384 384 l
 </path>
-<text matrix="-0.00458979 0.999989 -0.999989 -0.00458979 319.364 334.777" pos="64 272" stroke="black" type="label" width="90.918" height="11.954" depth="3.35" valign="baseline" size="LARGE">Object Plane</text>
-<text transformations="translations" pos="80 576" stroke="black" type="label" width="9.579" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">x</text>
-<text transformations="translations" pos="336 576" stroke="black" type="label" width="16.652" height="12.889" depth="0" valign="baseline" size="LARGE" style="math">x^{\prime \prime}</text>
-<text transformations="translations" pos="592 576" stroke="black" type="label" width="13.365" height="12.889" depth="0" valign="baseline" size="LARGE" style="math">x^{\prime}</text>
-<text transformations="translations" pos="208 576" stroke="black" type="label" width="17.811" height="11.761" depth="0" valign="baseline" size="LARGE">L1</text>
-<text transformations="translations" pos="464 576" stroke="black" type="label" width="17.811" height="11.761" depth="0" valign="baseline" size="LARGE">L2</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="368 512" stroke="black" type="label" width="14.634" height="11.761" depth="0" valign="baseline" size="LARGE">M</text>
-<path stroke="black" arrow="normal/normal">
-320 464 m
-336 464 l
-</path>
-<path stroke="black" arrow="normal/normal">
-368 464 m
-352 464 l
-</path>
-<path stroke="black" arrow="normal/normal">
-272 528 m
-272 512 l
-</path>
-<path stroke="black" arrow="normal/normal">
-272 368 m
-272 384 l
-</path>
-<text transformations="translations" pos="288 528" stroke="black" type="label" width="8.849" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">a</text>
-<text transformations="translations" pos="368 464" stroke="black" type="label" width="7.94" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">s</text>
-<text transformations="translations" pos="640 464" stroke="black" type="label" width="8.598" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">z</text>
-<text matrix="-0.0256448 0.999671 -0.999671 -0.0256448 1021.58 -186.297" transformations="rigid" pos="592 400" stroke="black" type="label" width="82.351" height="11.954" depth="3.35" valign="baseline" size="LARGE">image plane</text>
-<path transformations="rigid" stroke="black" arrow="normal/normal" rarrow="normal/normal">
-64 320 m
-192 320 l
-</path>
-<path transformations="rigid" stroke="black" arrow="normal/normal" rarrow="normal/normal">
-192 320 m
-320 320 l
-</path>
-<path transformations="rigid" stroke="black" arrow="normal/normal" rarrow="normal/normal">
-320 320 m
-448 320 l
-</path>
-<path transformations="rigid" stroke="black" arrow="normal/normal" rarrow="normal/normal">
-448 320 m
-576 320 l
-</path>
-<text transformations="translations" pos="128 304" stroke="black" type="label" width="10.147" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f</text>
-<text transformations="translations" pos="256 304" stroke="black" type="label" width="10.147" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f</text>
-<text transformations="translations" pos="384 304" stroke="black" type="label" width="10.147" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f</text>
-<text transformations="translations" pos="512 304" stroke="black" type="label" width="10.147" height="11.953" depth="3.35" valign="baseline" size="LARGE" style="math">f</text>
+<text transformations="translations" pos="176 352" stroke="black" type="label" width="22.119" height="13.743" depth="8.27" valign="baseline" size="LARGE" style="math">\frac{-a}{2 \lambda f}</text>
+<text transformations="translations" pos="304 352" stroke="black" type="label" width="22.119" height="11.917" depth="8.27" valign="baseline" size="LARGE" style="math">\frac{a}{2 \lambda f}</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="400 400" stroke="black" type="label" width="9.594" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">u</text>
+<text transformations="translations" pos="272 496" stroke="black" type="label" width="69.462" height="12.915" depth="4.3" valign="baseline" size="LARGE" style="math">|ATF(u)|</text>
+<text transformations="translations" pos="272 464" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE" style="math">1</text>
 </page>
 </ipe>
