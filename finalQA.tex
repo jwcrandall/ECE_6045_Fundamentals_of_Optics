@@ -144,12 +144,99 @@ Therefore the output field is defined in Equation \ref{eq:fa113}.
 At the  Fourier plane, a signum function with a $\pi$ phase shift is multiplied. It is equivalent to the Hilbert transform. Note that the Hilbert transform converts $\cos$ to $\sin$ and vise versa.
 
 \end{enumerate}
+
+% -----------------------------------------------------
+% Question  and Answer 2
+% -----------------------------------------------------
+\item{\textbf{Grating with tilted plane wave illumination} Consider a sinusoidal phase grating of the surface relief type with complex amplitude transmission function defined in Equation \ref{eq:fq21}}.
+
+\begin{equation}\label{eq:fq21}
+g_{\mathrm{t}}(x)=\exp \left\{i \frac{m}{2} \sin \left(2 \pi \frac{x}{\Lambda}\right)\right\}
+\end{equation}
+
+The grating is placed at the plane $z=0$ and illuminated by an off-axis plane wave defined in Equation \ref{eq:fq22} propagating at angle $\theta << 1$ with respect to the optical axis $z$.
+
+\begin{equation}\label{eq:fq22}
+\begin{aligned} 
+g_{-}(x, z=0)&=\left.\exp \left\{i 2 \pi \frac{x}{\lambda} \sin \theta+i 2 \pi \frac{z}{\lambda} \cos \theta\right\}\right|_{z=0} \\
+&\approx \exp \left\{i 2 \pi \frac{\theta x}{\lambda}\right\}
+\end{aligned} 
+\end{equation}
+
+\begin{enumerate}
+\item{Describe, in as much detail as possible, the Fresnel diffraction pattern $g_+(x,z=0)$.} \\
+
+In this problem, one dimensional geometry along the $x$-axis is considered. The Fresnel diffraction pattern, the field just behind the grating illuminated by the plane wave, is defined in Equation \ref{eq:fa21}.
+
+\begin{equation}\label{eq:fa21}
+\begin{aligned} 
+g_{+}(x, z=0)&=g_{t}(x) g_{-}(x, z=0)\\
+&=\exp \left\{i \frac{m}{2} \sin \left(2 \pi \frac{x}{\Lambda}\right)\right\} \exp \left\{i \frac{2 \pi}{\lambda} \theta x\right\}
+\end{aligned} 
+\end{equation}
+
+Note that the transmission function can be expanded as shown in Equation \ref{eq:fa22}.
+
+\begin{equation}\label{eq:fa22}
+\begin{aligned} 
+g_{t}(x)&=\exp \left\{i \frac{m}{2} \sin \left(2 \pi \frac{x}{\Lambda}\right)\right\}\\
+&=\sum_{q=-\infty}^{\infty} J_{q}\left(\frac{m}{2}\right) \exp \left\{i q \frac{2 \pi}{\Lambda} x\right\}
+\end{aligned} 
+\end{equation}
+
+Using Equation \ref{eq:fa22}, we can rewrite Equation \ref{eq:fa21} as Equation \ref{eq:fa23}.
+
+\begin{equation}\label{eq:fa23}
+g_{+}(x, z=0)=\sum_{q=-\infty}^{\infty} J_{q}\left(\frac{m}{2}\right) \exp \left\{i \frac{2 \pi}{\lambda}\left(\theta+\frac{q \lambda}{\Lambda}\right) x\right\}
+\end{equation}
+
+Since $\exp \left\{i \frac{2 \pi}{\lambda}\left(\theta+\frac{q \lambda}{\Lambda}\right) x\right\}$ represents a tilted plane wave whose propagation angle is $\theta + q\lambda / \Lambda$, Equation \ref{eq:fa23} implies that the transmitted field just behind the grating is consisted of a infinite number of plane waves, where $q$ denotes diffraction order and the amplitude of the diffraction order $q$ is $J_q(m/2)$. The propagation direction of the zero-order is identical as one of the incident tilted plane wave.\\
+
+\item{Describe, in as much detail as possible, the Fraunhofer diffraction pattern.}\\
+
+The field behind the grating is identical to Equation \ref{eq:fa21}. When the observation plane is in the far-zone, the Fraunhofer diffraction pattern is defined as Equation \ref{eq:fa24}.
+
+\begin{equation}\label{eq:fa24}
+g\left(x^{\prime}, z\right)=\int g_{+}(x, z=0) \exp \left\{-i \frac{2 \pi}{\lambda z}\left(x^{\prime} x\right)\right\} \mathrm{d} x
+\end{equation}
+
+Note that we neglected the scaling factor and phase term because the scaling factor changes overall magnitude of diffraction pattern and the phase term does not contribute to intensity. Substituting Equation \ref{eq:fa22} into Equation \ref{eq:fa24}, we obtain the field distribution of the Fraunhofer diffraction in Equation \ref{eq:fa25}.
+
+\begin{equation}\label{eq:fa25}
+\begin{aligned} 
+g\left(x^{\prime}, z\right)&= \int\left[\sum_{q=-\infty}^{\infty} J_{q}\left(\frac{m}{2}\right) \exp \left\{i \frac{2 \pi}{\lambda}\left(\theta+\frac{q \lambda}{\Lambda}\right)\right\}\right] \exp \left\{-i \frac{2 \pi}{\lambda z}\left(x x^{\prime}\right)\right\} \mathrm{d} x \\
+&=\sum_{q=-\infty}^{\infty} J_{q}\left(\frac{m}{2}\right)\left[\int \exp \left\{i 2 \pi\left(\frac{q}{\Lambda}+\frac{\theta}{\lambda}\right) x\right\} \exp \left\{-i 2 \pi \frac{x^{\prime}}{\lambda z} x\right\} \mathrm{d} x\right] \\
+&=\sum_{q=-\infty}^{\infty} J_{q}\left(\frac{m}{2}\right) \delta\left(\frac{x^{\prime}}{\lambda z}-\left[\frac{q}{\Lambda}+\frac{\theta}{\lambda}\right]\right)
+\end{aligned} 
+\end{equation}
+
+\begin{figure}
+\centering\fbox{\includegraphics[width=2.0in]{figures/final/2_a_diffraction.png}\includegraphics[width=2.0in]{figures/final/2_b_diffraction_rotate.png}}
+\caption{The whole diffraction pattern rotates by $\theta$ as th incident plane wave rotates}
+\label{fig:fa21}
+\end{figure}
+
+The intensity of the Fraunhofer diffraction pattern is defined in Equation \ref{eq:fa26}.
+
+\begin{equation}\label{eq:fa26}
+\begin{aligned} 
+I\left(x^{\prime}, z\right)&= \left|g\left(x^{\prime}, z\right)\right|^{2}\\
+&=\sum_{q=-\infty}^{\infty} J_{q}^{2}\left(\frac{m}{2}\right) \delta\left(\frac{x^{\prime}}{\lambda z}-\left[\frac{q}{\Lambda}+\frac{\theta}{\lambda}\right]\right)
+\end{aligned} 
+\end{equation}
+
+In the far-region, we should observe a infinite number of diffraction orders. The in-tensity of the diffraction order is proportional to $J_q^2(m/2)$ and the offset between two neighboring diffraction orders is $(\lambda z)/\Lambda$. The zeroth order is located at $x^{\prime}=z\theta$.
+
+\item{Compare with the on-axis illuminated phase grating that we analyzed in class.}\\
+
+In both cases (Fresnel and Fraunhofer diffraction), the diffraction patterns of the grating probed by a on-axis and tilted plane waves are identical except the angular shift by the incident angle $\theta$, as shown in Figure \ref{fig:fa21}.
+
+
+\end{enumerate}
+% -----------------------------------------------------
+% Question 3
+% -----------------------------------------------------
 \end{enumerate}
 
-$\int_{-\infty}^{\infty} \cos(2\pi \frac{x}{\Lambda})dx$
-
-$\int_{-\infty}^{\infty} e^{i(k-k_0)x}dx$
-
-$\frac{1}{2i}\delta(k-5) - \frac{1}{2i}\delta(k+5)$
 
 \end{document}
