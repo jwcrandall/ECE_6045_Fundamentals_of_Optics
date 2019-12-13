@@ -8,7 +8,7 @@
 
 
 \begin{figure}
-\centering\fbox{\includegraphics[height=2.0in]{figures/final/1_imaging_system.png}}
+\centering\fbox{\includegraphics[height=2.0in]{figures/final/1_a_imaging_system.png}}
 \caption{Lenses L1, L2 are identical with sufficiently large aperture and focal length $f=\SI{10}{c\metre}$. The pupil mask M has aperture $a=\SI{1}{c\metre}$. Inside the aperture there is a piece of glass of refractive index $n=1.5$. The glass has been partially etched to form a step of height $s=\SI{1}{\mu \metre}$, and the step is precisely aligned with the optical axis, as shown.}
 \label{fig:f1}
 \end{figure}
@@ -26,8 +26,37 @@ is placed at the object plane. Sketch the magnitude and phase of the transparenc
 
 \item{Suggest an intuitive description of the system's operation under spatially coherent, on-axis plane wave illumination (as in question c)}.
 
-
 \end{enumerate}
 
+% -----------------------------------------------------
+% Question 2
+% -----------------------------------------------------
+\item{\textbf{Grating with tilted plane wave illumination} Consider a sinusoidal phase grating of the surface relief type with complex amplitude transmission function defined in Equation \ref{eq:fq21}}.
+
+\begin{equation}\label{eq:fq21}
+g_{\mathrm{t}}(x)=\exp \left\{i \frac{m}{2} \sin \left(2 \pi \frac{x}{\Lambda}\right)\right\}
+\end{equation}
+
+The grating is placed at the plane $z=0$ and illuminated by an off-axis plane wave defined in Equation \ref{eq:fq22} propagating at angle $\theta << 1$ with respect to the optical axis $z$.
+
+\begin{equation}\label{eq:fq22}
+\begin{aligned} 
+g_{-}(x, z=0)&=\left.\exp \left\{i 2 \pi \frac{x}{\lambda} \sin \theta+i 2 \pi \frac{z}{\lambda} \cos \theta\right\}\right|_{z=0} \\
+&\approx \exp \left\{i 2 \pi \frac{\theta x}{\lambda}\right\}
+\end{aligned} 
+\end{equation}
+
+\begin{enumerate}
+\item{Describe, in as much detail as possible, the Fresnel diffraction pattern $g_+(x,z=0)$.}
+
+\item{Describe, in as much detail as possible, the Fraunhofer diffraction pattern.}
+
+\item{Compare with the on-axis illuminated phase grating that we analyzed in class.}
+
+
+\end{enumerate}
+% -----------------------------------------------------
+% Question 3
+% -----------------------------------------------------
 \end{enumerate}
 \end{document}
